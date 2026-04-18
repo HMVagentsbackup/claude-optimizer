@@ -48,3 +48,9 @@
 - GitHub MCP: gestión de repositorios
 - Google Drive MCP: documentos y archivos
 - Instalación: Claude Code instala MCPs automáticamente con el prompt correcto
+
+## Modelos correctos por tarea
+- Haiku: preguntas simples, clasificación, resúmenes
+- Sonnet: construir agentes, escribir código, tareas complejas
+- Opus: decisiones críticas, arquitectura de sistemas, análisis profundo
+- Regla: empieza con Sonnet, sube a Opus solo si es necesario

@@ -97,3 +97,31 @@ Cómo funciona:
 - Indexa resultados pesados con BM25 (315 KB → 5.4 KB)
 - Guarda estado de sesión en SQLite para restaurar automáticamente
 - Requiere Claude Code 2.0.22+ y Node 18+
+
+## Regla de las 2 correcciones (oficial de Anthropic)
+
+- Máximo 2 correcciones por tema en la misma sesión
+- Si falla después de 2 intentos → /clear y empezar limpio
+- Nunca repetir el mismo prompt — reescribir con lo aprendido
+- /clear: borra memoria contaminada (mejor herramienta)
+- /compact: comprime sesión larga sin perder el hilo
+- Esc: para a Claude en medio de una tarea
+- Esc+Esc o /rewind: regresa a un punto anterior
+
+## Checklist de prompts efectivos
+
+- ¿Dije exactamente QUÉ quiero?
+- ¿Di el contexto necesario? (archivos, errores, tecnologías)
+- ¿Le dije CÓMO verificar que funciona?
+- ¿Incluí lo aprendido de errores anteriores?
+- ¿Un compañero sin contexto entendería la instrucción?
+
+## Recomendaciones oficiales Anthropic
+
+- Dale a Claude forma de verificar su trabajo (tests, ejemplos)
+- Explorar primero → planear → ejecutar al final
+- Limpiar contexto entre tareas diferentes con /clear
+- Usar subagentes para investigar sin contaminar contexto
+- Darle un rol: "Eres experto en X"
+- Usar 3-5 ejemplos del resultado esperado
+- CLAUDE.md corto — si es muy largo Claude ignora la mitad

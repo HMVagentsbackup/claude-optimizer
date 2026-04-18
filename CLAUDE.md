@@ -503,3 +503,40 @@ Conectar: Gmail, Google Drive, Google Calendar."
 
 ### Precio de referencia para clientes:
 ~$0.70/hora activa = muy rentable como producto vendible
+
+## Shopify MCP — Tu tienda en piloto automático
+
+31 herramientas oficiales de Shopify disponibles para Claude.
+Productos, pedidos, clientes, descuentos e inventario.
+
+### Instalación (desktop):
+claude mcp add --transport stdio shopify-dev-mcp -- npx -y @shopify/dev-mcp@latest
+
+### Prompts listos para clientes ecommerce:
+
+SUBIR PRODUCTOS EN LOTE:
+"Tengo estos [N] productos nuevos. Súbelos con:
+nombre - precio - descripción - tallas
+Ponles la etiqueta [colección] a todos."
+
+CAMBIAR PRECIOS:
+"Busca todos los productos con etiqueta [X]
+y súbeles el precio un 15%. Muéstrame tabla
+con precio anterior y nuevo antes de aplicar."
+
+REPORTE DE VENTAS:
+"¿Cuáles son mis 5 productos más vendidos esta semana?
+Dame nombre, unidades vendidas e ingreso total."
+
+PEDIDOS PENDIENTES:
+"Muéstrame pedidos pendientes de envío ordenados
+por fecha. Marca los que tienen +3 días sin enviarse."
+
+CREAR DESCUENTO:
+"Crea código [NOMBRE] con X% de descuento en toda
+la tienda. Una vez por cliente, expira en 30 días."
+
+### Como producto vendible:
+- Agente de tienda Shopify 24/7 para clientes ecommerce
+- Reemplaza desarrollador/agencia para cambios rutinarios
+- Combinar con /loop daily para reportes automáticos

@@ -419,3 +419,39 @@ Flujo: Brainstorm → Design → Plan → Implement → Test → Review → Comp
 1. Configurar hooks de protección
 2. Activar YOLO Mode
 3. Proyecto nuevo → GSD / Proyecto existente → Super Powers
+
+## Dispatch — Control remoto desde el teléfono
+
+Asigna tareas desde el teléfono y Claude las ejecuta
+en tu computadora. Una sola conversación continua
+sincronizada entre ambos dispositivos.
+
+### Requisitos:
+- Claude Desktop instalado (mac/Windows)
+- App móvil Claude actualizada
+- Plan Pro o Max
+- Computadora encendida con Claude Desktop abierto
+
+### Configuración:
+1. Abrir Cowork en app móvil o desktop
+2. Ir a Dispatch → Get started
+3. Activar: acceso a archivos + mantener computadora despierta
+4. Finish setup → listo
+
+### Casos de uso para clientes:
+- Extraer datos de Excel/Sheets sin estar en la compu
+- Revisar emails y Slack → briefing desde el teléfono
+- Crear presentaciones desde datos en Drive
+- Organizar archivos y carpetas remotamente
+
+### Ejemplo de prompt potente:
+"Busca en mi carpeta Documentos todos los PDFs con
+la palabra 'contrato'. Lista nombre, fecha y resumen
+de una línea. Guárdalo como resumen-contratos.txt
+en el escritorio."
+
+### Limitaciones actuales:
+- Computadora debe estar encendida y despierta
+- Claude solo actúa cuando tú le pides
+- Sin notificaciones al terminar (revisar manualmente)
+- Un solo hilo de conversación simultáneo

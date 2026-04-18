@@ -273,3 +273,38 @@ issues cerrados y deploys — publica en Slack y guarda en Drive
 ### Nota importante:
 /loop necesita que Claude Code esté corriendo
 Para automatización 24/7 sin tu computadora → usar /schedule en Cloud
+
+## Flujo para crear agentes por cliente
+
+### Flujo completo (idea → agente funcionando):
+1. Shift+Tab → activar Plan Mode
+2. Describir el agente (tarea, triggers, output esperado)
+3. Claude investiga el proyecto y entrega un plan
+4. Revisar y ajustar el plan
+5. Shift+Tab → Auto Mode → Claude construye todo
+6. /loop para programar el agente automáticamente
+
+### Prompt de descubrimiento (cuando el cliente no sabe qué necesita):
+"Hazme preguntas sobre mi día a día y mis tareas repetitivas.
+Basándote en mis respuestas, sugiere 3 agentes que automaticen
+las tareas más tediosas. Para cada uno incluye: qué haría,
+qué herramientas necesita y cuánto tiempo ahorraría por semana."
+
+### Estructura de prompt para crear agente:
+"Quiero crear un agente que [tarea específica].
+El agente debe:
+1. [acción 1]
+2. [acción 2]
+3. [resultado esperado]
+Investiga mi proyecto y diseña un plan completo."
+
+### MCPs que Claude instala automáticamente:
+- Gmail MCP: agentes de email
+- GitHub MCP: agentes de code review
+- Browser MCP: automatización web
+Comando: claude mcp add [nombre] -- npx -y @anthropic/[nombre]
+
+### De herramienta a empleado digital:
+- Agente sin /loop = herramienta manual
+- Agente con /loop = empleado que trabaja solo
+- Agente con /schedule = empleado 24/7 en la nube

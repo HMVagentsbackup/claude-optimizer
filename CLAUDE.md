@@ -27,3 +27,15 @@
 - Trabajo en múltiples proyectos simultáneamente
 - Prioriza soluciones escalables y reutilizables
 - Siempre piensa en cómo esto puede aplicarse a otros clientes
+
+## Conocimiento de agentes y automatización
+- Usar /plan antes de crear cualquier agente nuevo
+- Separar agentes por departamento en carpetas distintas
+- Usar subagentes para tareas paralelas independientes
+- MCPs recomendados: Firecrawl, Playwright, Apify
+- Instalar skills con: npx -y [nombre-del-skill]
+- Usar /loop para tareas programadas recurrentes
+- Usar /schedule para agentes que corren en la nube
+- YOLO mode para automatización sin interrupciones
+- Mantener un CLAUDE.md por cliente/proyecto
+- Skills esenciales: Skill Creator, SuperPowers, GSD

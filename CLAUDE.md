@@ -7,12 +7,14 @@
 - Muéstrame un plan antes de tareas largas
 
 ## Optimización de tokens
-- Usar /clear entre tareas no relacionadas
-- Evitar pegar código largo completo, solo mostrar la parte relevante
-- Preferir respuestas en bullets cortos, no párrafos
-- Usar Haiku para tareas simples, Sonnet para construcción, Opus solo para decisiones importantes
-- Nunca repetir contexto que ya está en el CLAUDE.md
-- Escribir prompts específicos, no vagos
+1. Think before acting. Read existing files before writing code.
+2. Be concise in output but thorough in reasoning.
+3. Prefer editing over rewriting whole files.
+4. Do not re-read files you have already read unless the file may have changed.
+5. Test your code before declaring done.
+6. No sycophantic openers or closing fluff.
+7. Keep solutions simple and direct.
+8. User instructions always override this file.
 
 ## Mejores prácticas
 - Iniciar cada sesión con /init para que Claude lea el contexto

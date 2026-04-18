@@ -74,3 +74,26 @@
 - SIEMPRE verificar trabajo antes de darlo por terminado
 - Leer código existente antes de implementar cambios
 - No implementar nada sin estar 100% seguro — investigar primero o preguntar
+
+## Plugin esencial — context-mode
+
+Reduce hasta 98% el contexto consumido por Claude Code.
+
+Instalación:
+/plugin marketplace add mksglu/context-mode
+/plugin install context-mode@context-mode
+
+Verificar instalación:
+ctx doctor
+
+Ver métricas de ahorro:
+ctx stats
+
+Actualizar:
+ctx upgrade
+
+Cómo funciona:
+- Ejecuta comandos en sandbox (datos crudos nunca tocan el contexto)
+- Indexa resultados pesados con BM25 (315 KB → 5.4 KB)
+- Guarda estado de sesión en SQLite para restaurar automáticamente
+- Requiere Claude Code 2.0.22+ y Node 18+

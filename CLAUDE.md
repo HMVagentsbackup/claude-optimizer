@@ -226,3 +226,50 @@ claude install-skill https://github.com/anthropics/skills/tree/main/skills/skill
 1. /grill-me → validar la idea del agente
 2. /write-a-prd → generar el plan técnico
 3. Skill Creator → empaquetar el agente como skill reutilizable
+
+## /loop — Automatización programada
+
+### Sintaxis:
+/loop [intervalo] [prompt]
+Intervalos: 5m, 2h, 1d, daily, weekly
+
+### Comandos esenciales:
+/loop 5m [prompt]          → cada 5 minutos
+/loop 2h [prompt]          → cada 2 horas
+/loop daily [prompt]       → diario
+/loop weekly [prompt]      → semanal
+/loop 20m /skill-name      → loop con skill
+/rc                        → llevar sesión al celular
+claude remote-control      → control remoto desde teléfono
+/schedule                  → programador visual (Desktop)
+
+### Workflows clave para agentes de clientes:
+
+ONBOARDING AUTOMÁTICO:
+/loop 1h cuando llegue nuevo signup, envía email de bienvenida,
+crea entrada en spreadsheet, agenda kickoff en Calendar,
+notifica al equipo en Slack
+
+CRM Y PIPELINE:
+/loop 2h revisa deals sin actividad en 3 días,
+genera emails de seguimiento y actualiza el pipeline
+
+REPORTE DIARIO:
+/loop daily a las 9am jala ingresos de ayer,
+compara con semana anterior y marca anomalías
+
+MONITOREO DE ERRORES:
+/loop 1h revisa logs de errores, analiza stack trace,
+identifica causa y crea PR con fix para bugs simples
+
+CODE REVIEW:
+/loop 2h busca nuevos PRs en GitHub, analiza seguridad
+y performance, publica resumen como comentario
+
+DIGEST SEMANAL DEL EQUIPO:
+/loop weekly cada viernes 4pm compila PRs completados,
+issues cerrados y deploys — publica en Slack y guarda en Drive
+
+### Nota importante:
+/loop necesita que Claude Code esté corriendo
+Para automatización 24/7 sin tu computadora → usar /schedule en Cloud

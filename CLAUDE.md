@@ -13,3 +13,10 @@
 - Usar Haiku para tareas simples, Sonnet para construcción, Opus solo para decisiones importantes
 - Nunca repetir contexto que ya está en el CLAUDE.md
 - Escribir prompts específicos, no vagos
+
+## Mejores prácticas
+- Iniciar cada sesión con /init para que Claude lea el contexto
+- Usar /plan antes de tareas complejas
+- Mantener conversaciones cortas y enfocadas en una sola tarea
+- Limpiar contexto con /clear cuando cambias de tema
+- Describir el resultado esperado, no el proceso

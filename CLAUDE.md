@@ -163,3 +163,43 @@ Cómo funciona:
 5. USO EXTRA CON LÍMITE:
    → Activar en Settings → Usage → Extra Usage
    → Poner límite bajo ($5-10 USD) como red de seguridad
+
+## 4 Superpoderes — MCPs esenciales
+
+### 1. Supadata — Transcribir videos
+Transcribe videos de YouTube, TikTok, Instagram + métricas
+Instalación .mcp.json:
+npx -y supadata-mcp
+API key: supadata.ai
+Env: SUPADATA_API_KEY
+
+### 2. Apify — Scraping de internet
+Extrae datos de cualquier página web, redes sociales, precios
+Instalación .mcp.json:
+npx -y @anthropic-ai/mcp-apify
+API key: apify.com → Settings → Integrations
+Env: APIFY_TOKEN
+
+### 3. Last 30 Days — Investigador de noticias
+Investiga noticias de los últimos 30 días de cualquier nicho
+Instalación:
+claude install-skill https://github.com/mvanhorn/last30days-skill
+No requiere API key
+
+### 4. Playwright CLI — Navegador propio
+Claude navega la web, toma screenshots, llena formularios
+Usa menos tokens que Chrome integration
+Instalación:
+npm install -g @anthropic-ai/claude-code-playwright
+npx playwright install chromium
+
+### Flujo combinado para análisis de competencia:
+"Usa Supadata para transcribir videos de [canal],
+Apify para extraer sus redes sociales,
+Last 30 Days para noticias del nicho,
+Playwright para screenshots de su web"
+
+### Tips:
+- Verificar instalación con /mcp después de cada uno
+- Usar Plan Mode (Shift+Tab) para tareas que combinan varios MCPs
+- Playwright > Chrome para páginas web simples (menos tokens)

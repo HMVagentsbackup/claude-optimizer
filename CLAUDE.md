@@ -540,3 +540,39 @@ la tienda. Una vez por cliente, expira en 30 días."
 - Agente de tienda Shopify 24/7 para clientes ecommerce
 - Reemplaza desarrollador/agencia para cambios rutinarios
 - Combinar con /loop daily para reportes automáticos
+
+## Firecrawl + Playwright — Ojos y manos en internet
+
+### Firecrawl = Leer cualquier página web (ojos):
+Instalación (desktop):
+claude mcp add firecrawl-mcp-server -e FIRECRAWL_API_KEY=tu-key -- npx -y firecrawl-mcp-server
+API key: firecrawl.dev (500 créditos gratis/mes)
+Verificar: "Lee firecrawl.dev y dime de qué se trata"
+
+### Playwright = Navegar como persona real (manos):
+Instalación (desktop):
+claude mcp add playwright -- npx -y @anthropic-ai/playwright-mcp@latest
+Sin API key — 100% gratis
+Verificar: "Abre google.com y toma captura de pantalla"
+
+### Prompts para clientes:
+
+INVESTIGAR COMPETENCIA:
+"Lee [URL competidor] y dame:
+1. De qué se trata el negocio
+2. Qué servicios ofrecen
+3. Cómo se posicionan
+4. Qué puede mejorar su página"
+
+EXTRAER DATOS:
+"Abre [URL], busca [término] y dame lista
+de primeros 5 resultados con título y enlace"
+
+MONITOREAR PRECIOS:
+"Revisa precios de [producto] en [tiendas]
+y avísame cuando bajen de [precio]"
+
+### Combinar con /loop:
+/loop daily → monitoreo automático de competencia
+/loop 4h → vigilar precios en tiempo real
+/loop weekly → reporte de análisis de mercado

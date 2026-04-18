@@ -125,3 +125,21 @@ Cómo funciona:
 - Darle un rol: "Eres experto en X"
 - Usar 3-5 ejemplos del resultado esperado
 - CLAUDE.md corto — si es muy largo Claude ignora la mitad
+
+## 5 errores que queman el plan
+
+1. CORRECCIONES: No mandar mensaje nuevo para corregir
+   → Editar el mensaje original y regenerar
+
+2. CHATS LARGOS: No acumular +20 mensajes en el mismo chat
+   → Pedir resumen → abrir chat nuevo → pegar resumen
+
+3. PREGUNTAS SEPARADAS: No mandar preguntas una por una
+   → Juntar todo en un solo mensaje
+
+4. FUNCIONES ENCENDIDAS: Apagar MCPs y conectores
+   que no se estén usando en el momento
+
+5. HORAS PICO: Evitar usar Claude de 7am a 1pm
+   hora centro México — cuesta el doble
+   → Usar temprano o de noche

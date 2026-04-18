@@ -203,3 +203,26 @@ Playwright para screenshots de su web"
 - Verificar instalación con /mcp después de cada uno
 - Usar Plan Mode (Shift+Tab) para tareas que combinan varios MCPs
 - Playwright > Chrome para páginas web simples (menos tokens)
+
+## 5 Skills esenciales — Tu equipo de trabajo
+
+### Flujo correcto (en orden):
+1. Find Skills → buscar si ya existe en skillsmp.com
+2. Grill Me → interrogar la idea antes de construir
+3. Write a PRD → generar el plano completo del proyecto
+4. Skill Creator o Write a Skill → crear skill si no existe
+
+### Instalación de las 4 skills de un jalón:
+claude install-skill https://github.com/anthropics/skills/tree/main/skills/skill-creator && npx skills@latest add mattpocock/skills/write-a-skill && npx skills@latest add mattpocock/skills/grill-me && npx skills@latest add mattpocock/skills/write-a-prd
+
+### Cuándo usar cada una:
+- Skill Creator: automatizar tareas repetitivas del día a día
+- Write a Skill: crear skills profesionales para compartir
+- Find Skills: skillsmp.com — 66k+ skills ya hechas
+- Grill Me: /grill-me — interroga tu idea antes de construir
+- Write a PRD: /write-a-prd — genera plano completo del proyecto
+
+### Para agentes de automatización por cliente:
+1. /grill-me → validar la idea del agente
+2. /write-a-prd → generar el plan técnico
+3. Skill Creator → empaquetar el agente como skill reutilizable

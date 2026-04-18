@@ -39,3 +39,12 @@
 - YOLO mode para automatización sin interrupciones
 - Mantener un CLAUDE.md por cliente/proyecto
 - Skills esenciales: Skill Creator, SuperPowers, GSD
+
+## MCPs esenciales para agentes
+- Firecrawl: scraping y lectura de URLs
+- Playwright: control de navegador web
+- Apify: extracción de datos de redes sociales
+- Zapier MCP: conectar 6000+ apps sin código
+- GitHub MCP: gestión de repositorios
+- Google Drive MCP: documentos y archivos
+- Instalación: Claude Code instala MCPs automáticamente con el prompt correcto

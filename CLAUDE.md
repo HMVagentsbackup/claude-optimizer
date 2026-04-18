@@ -56,3 +56,21 @@
 - Sonnet: construir agentes, escribir código, tareas complejas
 - Opus: decisiones críticas, arquitectura de sistemas, análisis profundo
 - Regla: empieza con Sonnet, sube a Opus solo si es necesario
+
+## Trucos de productividad
+- Usar "ultrathink" en prompts para activar pensamiento profundo
+- Combinar /plan + ultrathink para tareas complejas
+- Pedir sub-agentes para tareas con partes independientes paralelas
+- Correr /init en proyectos nuevos para generar contexto automático
+- Prompt para sub-agentes: "usa sub-agentes separados en paralelo para cada parte independiente"
+
+## Sistema de memoria entre sesiones
+- Antes de cerrar sesión, guardar resumen en PROGRESS.md
+- Al iniciar sesión nueva, leer PROGRESS.md para retomar donde se quedó
+- Organizar notas en: Completado / En progreso / Pendiente / Decisiones
+- Actualizar PROGRESS.md después de cada bloque significativo de trabajo
+
+## Reglas de calidad
+- SIEMPRE verificar trabajo antes de darlo por terminado
+- Leer código existente antes de implementar cambios
+- No implementar nada sin estar 100% seguro — investigar primero o preguntar

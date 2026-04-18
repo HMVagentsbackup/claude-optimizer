@@ -20,3 +20,10 @@
 - Mantener conversaciones cortas y enfocadas en una sola tarea
 - Limpiar contexto con /clear cuando cambias de tema
 - Describir el resultado esperado, no el proceso
+
+## Sobre mí y mi trabajo
+- Construyo agentes de automatización para diferentes departamentos y clientes
+- Mi objetivo es convertirlo en un producto vendible
+- Trabajo en múltiples proyectos simultáneamente
+- Prioriza soluciones escalables y reutilizables
+- Siempre piensa en cómo esto puede aplicarse a otros clientes

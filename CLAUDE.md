@@ -143,3 +143,23 @@ Cómo funciona:
 5. HORAS PICO: Evitar usar Claude de 7am a 1pm
    hora centro México — cuesta el doble
    → Usar temprano o de noche
+
+## 5 configuraciones para rendir el doble
+
+1. PROYECTOS: Subir archivos frecuentes UNA vez en un Project
+   → No repetir los mismos archivos en cada chat
+
+2. PERFIL: Configurar en Settings → Profile quién eres
+   → Claude lo aplica en todas las conversaciones automáticamente
+
+3. HAIKU PARA LO SIMPLE:
+   → Haiku: correcciones, traducciones, listas, preguntas directas
+   → Sonnet: código, análisis, estrategias, contenido complejo
+
+4. REPARTIR USO EN 2 BLOQUES:
+   → Claude tiene ventana de 5 horas — lo gastado se libera después
+   → Bloque 1 mañana + Bloque 2 (5 horas después) = duplicas el plan
+
+5. USO EXTRA CON LÍMITE:
+   → Activar en Settings → Usage → Extra Usage
+   → Poner límite bajo ($5-10 USD) como red de seguridad

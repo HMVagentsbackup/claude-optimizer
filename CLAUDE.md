@@ -455,3 +455,51 @@ en el escritorio."
 - Claude solo actúa cuando tú le pides
 - Sin notificaciones al terminar (revisar manualmente)
 - Un solo hilo de conversación simultáneo
+
+## Managed Agents — Agentes 24/7 en la nube
+
+Agentes que viven en servidores de Anthropic.
+Costo: ~$0.70 USD/hora activa. Si espera, no cobra.
+Consola: platform.claude.com (distinto a claude.ai)
+
+### Setup:
+1. platform.claude.com → misma cuenta de Claude
+2. Settings → Billing → agregar tarjeta + límite mensual
+3. Agent Quickstart → describir agente en español
+4. Claude lo arma y hace preguntas
+5. Conectar cuentas vía MCP
+
+### Qué SÍ puede tocar (vive en la nube):
+Gmail, Outlook, Google Drive, Notion, Dropbox
+WhatsApp Business, Slack, Telegram
+Google Calendar, Calendly
+CRMs, ecommerce, dashboards online
+Cualquier servicio con API
+
+### Qué NO puede tocar:
+Tu computadora local, archivos offline
+Apps de escritorio (Photoshop, Excel local)
+WhatsApp personal (solo WhatsApp Business API)
+Redes privadas sin internet
+
+### Agentes listos para vender a clientes:
+
+ATENCIÓN A CLIENTES (WhatsApp 24/7):
+"Quiero un agente que conteste WhatsApp de mis clientes.
+Negocio: [descripción]. Debe: saludar, contestar precios/horarios,
+agendar en Google Calendar, pasarme si no sabe,
+mandarme resumen diario por Gmail.
+Conectar: WhatsApp Business, Google Calendar, Gmail."
+
+REPORTE SEMANAL AUTOMÁTICO:
+"Agente que cada lunes 8am arme reporte semanal.
+Debe: resumir Gmail, leer Google Sheets de ventas,
+revisar Calendar, armar PDF y enviarlo por correo.
+Conectar: Gmail, Google Drive, Google Calendar."
+
+### Tips de modelo:
+- Sonnet: 90% de los casos (rápido y barato)
+- Opus: solo cuando necesitas razonamiento complejo
+
+### Precio de referencia para clientes:
+~$0.70/hora activa = muy rentable como producto vendible

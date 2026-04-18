@@ -308,3 +308,38 @@ Comando: claude mcp add [nombre] -- npx -y @anthropic/[nombre]
 - Agente sin /loop = herramienta manual
 - Agente con /loop = empleado que trabaja solo
 - Agente con /schedule = empleado 24/7 en la nube
+
+## Canales — Telegram y Discord
+
+### Para qué sirven:
+Hablar con Claude Code desde Telegram o Discord
+en vez de solo desde la terminal
+
+### Telegram (más simple):
+Requisito: instalar Bun → curl -fsSL https://bun.sh/install | bash
+
+1. Crear bot en @BotFather → /newbot → copiar TOKEN
+2. /plugin install telegram@claude-plugins-official
+3. /telegram:configure TU_TOKEN
+4. claude --channels plugin:telegram@claude-plugins-official
+5. Emparejar: /telegram:access pair CODIGO
+6. Seguridad: /telegram:access policy allowlist
+
+Limitación: NO lee mensajes cuando Claude está apagado
+
+### Discord (más poderoso):
+1. discord.com/developers/applications → New Application
+2. Bot → Message Content Intent → activar
+3. Copiar token (solo se muestra una vez)
+4. OAuth2 → URL Generator → invitar bot al servidor
+5. /plugin install discord@claude-plugins-official
+6. /discord:configure → pegar token
+7. claude --channels plugin:discord@claude-plugins-official
+8. Emparejar por DM
+
+Ventaja: SÍ lee historial de mensajes anteriores
+
+### Para clientes:
+- Un bot por cliente/proyecto
+- Siempre activar allowlist después de emparejar
+- Discord para equipos (historial), Telegram para notificaciones rápidas

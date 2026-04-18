@@ -343,3 +343,79 @@ Ventaja: SÍ lee historial de mensajes anteriores
 - Un bot por cliente/proyecto
 - Siempre activar allowlist después de emparejar
 - Discord para equipos (historial), Telegram para notificaciones rápidas
+
+## Gbrain — Memoria permanente para Claude
+
+Convierte una carpeta de notas en el cerebro de Claude.
+Claude consulta su cerebro antes de cada respuesta.
+Gratis, open source, corre local.
+
+### Instalación automática (pegar en Claude Code):
+"Ve al repositorio https://github.com/garrytan/gbrain
+Lee el README y luego:
+1. Instala Gbrain con bun globalmente
+2. Inicializa con gbrain init
+3. Importa mi carpeta de notas
+4. Configura MCP en ~/.claude/server.json
+5. Verifica con gbrain doctor --json"
+
+### Instalación manual:
+bun add -g github:garrytan/gbrain
+gbrain init
+gbrain import ~/mis-notas --no-embed
+gbrain doctor --json
+
+### Configurar en ~/.claude/server.json:
+{
+  "mcpServers": {
+    "gbrain": {
+      "command": "gbrain",
+      "args": ["serve"]
+    }
+  }
+}
+
+### Para agentes de clientes:
+- Crear una carpeta por cliente con sus notas, juntas y contexto
+- Importar: gbrain import ~/clientes/nombre-cliente
+- Claude recordará todo sobre ese cliente automáticamente
+- Escalar a Supabase cuando supere 1,000 archivos:
+  gbrain migrate --to supabase
+
+### Integraciones automáticas:
+- Correo, calendario, juntas grabadas
+- Redes sociales
+- Línea de voz (Claude contesta y guarda la plática)
+
+## Piloto automático (instalar en desktop)
+
+### YOLO Mode — Claude sin interrupciones:
+claude --dangerously-skip-permissions
+⚠️ SIEMPRE configurar hooks antes de activar
+
+### Hooks de protección (~/.claude/settings.json):
+Bloquean comandos peligrosos antes de ejecutarse
+- exit 0 → Permitir
+- exit 2 → Bloquear
+- otro → Advertir y continuar
+Comandos bloqueados por defecto: rm -rf, drop table
+
+### GSD — Proyectos nuevos desde cero:
+Instalación (desktop): npx get-shit-done-cc@latest
+Comandos:
+/gsd:new-project   → nuevo proyecto
+/gsd:discuss-phase → definir qué construir
+/gsd:plan-phase    → plan paso a paso
+/gsd:execute-phase → ejecutar automáticamente
+/gsd:verify-work   → verificar que funciona
+/gsd:ship          → deploy
+
+### Super Powers — Proyectos existentes:
+Instalación (desktop): npx superpowers@latest init
+Crea subagentes paralelos con contexto limpio
+Flujo: Brainstorm → Design → Plan → Implement → Test → Review → Complete
+
+### Flujo completo piloto automático:
+1. Configurar hooks de protección
+2. Activar YOLO Mode
+3. Proyecto nuevo → GSD / Proyecto existente → Super Powers

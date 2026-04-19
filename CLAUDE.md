@@ -996,3 +996,51 @@ vs sin proceso: 1 tarea y ya vas en 85%
 5. Deploy desde el primer proyecto
 6. Git como salvavidas
 7. Proceso: plan → decompose → implement → review
+
+## Claude Ads — Meta Ads con reglas de seguridad
+
+17 sub-habilidades + 10 agentes + 23 archivos de referencia.
+Open source MIT: github.com/AgriciDaniel/claude-ads
+
+### Instalación (desktop):
+macOS/Linux:
+curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-ads/main/install.sh | bash
+Windows:
+irm https://raw.githubusercontent.com/AgriciDaniel/claude-ads/main/install.ps1 | iex
+
+### Conectar Meta:
+1. developers.facebook.com → Crear App → Business
+2. Permisos: ads_management, ads_read,
+   business_management, read_insights
+3. Graph API Explorer → generar Access Token
+4. Abrir Claude Code → claude → compartir token + act_ID
+
+### 6 reglas de seguridad incluidas:
+- Campañas siempre en PAUSED al crear
+- Límite $100/día sin confirmación explícita
+- Contenido prohibido bloqueado automáticamente
+- Special Ad Categories activadas (vivienda, empleo, crédito)
+- Sin cambios sin aprobación humana
+- Regla 3x Kill: CPA 3x mayor al objetivo → pausar
+
+### Prompts para clientes:
+
+AUDITORÍA COMPLETA:
+"Ads Meta — Audita mi cuenta de Meta Ads.
+Industria: [X], presupuesto: [Y]/mes,
+objetivo: [ventas/leads/tráfico].
+Dame Health Score, hallazgos y recomendaciones."
+
+ANÁLISIS DE COMPETENCIA:
+"Ads Meta — Investiga anuncios de mi competencia
+en [nicho]. Qué formatos usan, qué copy manejan,
+cómo puedo destacar. Compara con mis campañas."
+
+### Otras plataformas incluidas:
+Google Ads, TikTok, LinkedIn, YouTube, Microsoft Ads
+
+### Como producto vendible:
+- Auditoría de Meta Ads para agencias y negocios
+- Gestión de campañas 24/7 con Managed Agent
+- Combinar con /loop weekly para reportes automáticos
+- Health Score como entregable para clientes

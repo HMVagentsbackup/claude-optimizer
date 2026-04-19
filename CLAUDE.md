@@ -891,3 +891,40 @@ Necesario para que tareas programadas corran solas
 ### El nuevo paradigma:
 Antes: abres Claude para decirle qué hacer
 Ahora: abres Claude para ver qué hizo
+
+## Los 3 modelos — Cuándo usar cada uno
+
+Regla: empieza siempre por abajo, escala solo cuando necesites.
+
+### HAIKU — Para pensar (prácticamente gratis):
+- Lluvia de ideas y brainstorming
+- Preguntas rápidas del día a día
+- Resumir textos y documentos cortos
+- Organizar ideas antes de construir
+- Clasificar y categorizar información
+
+### SONNET — Para construir (70% de tu uso):
+- Escribir y debuggear código
+- Crear contenido, emails, propuestas
+- Analizar documentos y datos grandes
+- Flujos multi-paso con herramientas
+- Proyectos con contexto amplio (1M tokens)
+
+### OPUS — Para lo importante (solo cuando vale):
+- Investigación profunda y análisis complejo
+- Arquitectura de software y decisiones críticas
+- Cuando Sonnet no dio el ancho
+- Razonamiento multi-paso avanzado
+- Generación de proyectos grandes
+
+### Workflow diario:
+Mañana → Haiku (organizar, planear, preguntar)
+A trabajar → Sonnet (construir, crear, analizar)
+Problema complejo → Opus (solo con intención)
+
+### Para agentes de clientes:
+- Clasificación de leads → Haiku
+- Construir el agente → Sonnet
+- Arquitectura de sistema complejo → Opus
+- Reportes automáticos /loop → Haiku
+- Análisis profundo de datos → Sonnet/Opus

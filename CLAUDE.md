@@ -1938,3 +1938,62 @@ identidad. Sin caricatura, pintura ni ilustración."
 - Servicio de upscaling para agencias de diseño
 - Combinar con Editor Pro Max para contenido visual completo
 - Precio sugerido: $5-20 USD por foto restaurada
+
+## Blender MCP — Modelado 3D con lenguaje natural
+
+Controla Blender con Claude desde Claude Desktop.
+Sin saber programar. Open source MIT.
+github.com/ahujasid/blender-mcp
+
+### Requisitos:
+- Blender 3.0+ (blender.org/download)
+- Python 3.10+
+- uv: curl -LsSf https://astral.sh/uv/install.sh | sh
+- Claude Desktop
+
+### Instalación (desktop):
+1. Descargar addon.py del repo de GitHub
+2. Blender → Edit → Preferences → Add-ons → Install
+3. Activar "Interface: Blender MCP"
+4. Presionar N en viewport → pestaña BlenderMCP → Start MCP Server
+5. Agregar a claude_desktop_config.json:
+{
+  "mcpServers": {
+    "blender": {
+      "command": "uvx",
+      "args": ["blender-mcp"]
+    }
+  }
+}
+6. Reiniciar Claude Desktop completamente
+
+### Capacidades:
+- Crear y modificar objetos 3D
+- Aplicar materiales (metal, vidrio, madera, plástico)
+- Iluminar escenas cinematográficamente
+- Inspeccionar escena completa
+- Ejecutar código Python en Blender
+- Descargar assets de Poly Haven
+- Generar modelos 3D con IA (Hyper3D Rodin, Hunyuan3D)
+- Screenshots del viewport
+
+### Prompts listos:
+
+PRIMERA ESCENA:
+"Crea escena de calabozo medieval con paredes de piedra,
+antorchas, cofre del tesoro y dragón. Materiales realistas."
+
+ILUMINACIÓN CINEMATOGRÁFICA:
+"Agrega iluminación de tres puntos: key light 45°,
+fill light suave opuesto, rim light desde atrás. Look dramático."
+
+ASSET DE POLY HAVEN:
+"Descarga árbol realista de Poly Haven, escálalo
+y agrega pasto con material verde natural."
+
+### Como producto vendible:
+- Renders 3D para clientes de arquitectura y diseño
+- Assets 3D para marketing de productos
+- Escenas para presentaciones y pitches
+- Combinar con Editor Pro Max para video completo
+⚠️ Siempre guardar archivo antes de trabajar con Claude

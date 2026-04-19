@@ -658,3 +658,45 @@ en redes en los últimos 30 días"
 /loop weekly → reporte semanal automático de tendencias
 /loop daily → monitoreo diario del nicho del cliente
 Cada reporte se guarda automáticamente como Markdown
+
+## WhatsApp AgentKit — Agente de WhatsApp para clientes
+
+Construye agente de WhatsApp personalizado en 30 minutos.
+Claude Code escribe todo el código — sin programar.
+Open source: github.com/Hainrixz/whatsapp-agentkit
+
+### Requisitos (instalar en desktop):
+- Python 3.11+
+- Claude Code
+- Anthropic API Key (platform.anthropic.com)
+- Cuenta WhatsApp API (Whapi, Meta Cloud API o Twilio)
+
+### Instalación:
+git clone https://github.com/Hainrixz/whatsapp-agentkit.git
+cd whatsapp-agentkit
+bash start.sh
+claude → /build-agent
+
+### Claude te hace 10 preguntas:
+Nombre del negocio, giro, propósito del agente,
+nombre del agente, tono, horario, archivos del negocio,
+API key, proveedor WhatsApp, credenciales
+
+### Probar antes de publicar:
+python tests/test_local.py
+
+### Deploy a producción:
+Opción A (servidor propio): docker compose up --build
+Opción B (sin servidor): Railway.app → conectar GitHub → deploy automático
+
+### Personalizar después (sin código):
+claude "Haz el agente más amigable"
+claude "Agrega el nuevo servicio X"
+claude "Migra de Whapi a Meta Cloud API"
+
+### Como producto vendible:
+- Un repositorio clonado por cliente
+- ~$3 por millón de tokens (muy barato)
+- Whapi: sandbox gratis para demos
+- Railway: plan gratis para empezar
+- Ideal para: restaurantes, clínicas, salones, inmobiliarias

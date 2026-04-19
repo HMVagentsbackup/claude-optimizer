@@ -1410,3 +1410,58 @@ nota de preguntas pendientes. Conectar con wikilinks."
 - --target claude hace la diferencia en calidad
 - Un vault por cliente/proyecto
 - Abrir Claude Code desde dentro del vault
+
+## G Stack — 31 habilidades de Garry Tan (Y Combinator)
+
+Creado por el CEO de Y Combinator. Licencia MIT. Gratis.
+Convierte Claude en equipo completo de desarrollo.
+github.com/garrytan/gstack
+
+### Instalación (desktop):
+git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup
+
+### 3 comandos mágicos para empezar:
+/autoplan → arquitecto que planea todo el proyecto
+/qa       → prueba todo en navegador real, arregla errores
+/ship     → publica a producción automáticamente
+
+### Las 31 habilidades por categoría:
+
+PLANEAR:
+/autoplan, /office-hours, /plan-ceo-review,
+/plan-eng-review, /plan-design-review
+
+DISEÑAR:
+/design-consultation, /design-shotgun,
+/design-html, /design-review
+
+REVISAR:
+/review, /investigate, /cso (seguridad),
+/codex (segunda opinión con otra IA)
+
+PROBAR:
+/qa, /qa-only, /benchmark, /browse, /connect-chrome
+
+PUBLICAR:
+/ship, /land-and-deploy, /canary,
+/document-release, /retro
+
+HERRAMIENTAS:
+/careful, /freeze, /unfreeze, /guard,
+/setup-browser-cookies, /setup-deploy,
+/gstack-upgrade, /learn
+
+### Flujo completo de proyecto:
+1. /office-hours → definir y mejorar idea
+2. /autoplan → plan completo automático
+3. /design-html → código y diseño
+4. /review → revisar y arreglar errores
+5. /qa → probar en navegador real
+6. /ship → publicar a internet
+7. /retro → resumen y mejoras
+
+### Para agentes de clientes:
+- /guard para proteger código del cliente
+- /canary para vigilar que todo funcione post-deploy
+- /retro semanal como entregable al cliente
+- /cso para auditoría de seguridad

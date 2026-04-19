@@ -794,3 +794,53 @@ get_dashboard_summary
   docker compose up -d
 - Conectar con webhooks de Typeform, Tally, Google Forms
 - Combinar con agente WhatsApp para leads automáticos
+
+## Agency Agents — 144 especialistas listos
+
+144+ agentes especializados para Claude Code.
+Tu agencia completa gratis en un comando.
+Open source MIT: github.com/msitarzewski/agency-agents
+
+### Instalación (desktop):
+git clone https://github.com/msitarzewski/agency-agents.git
+cd agency-agents
+cp -r agents/* ~/.claude/agents/
+ls ~/.claude/agents/ (verificar)
+
+### Activar un agente:
+"Hey Claude, activate [Nombre del Agente] mode"
+
+### 12 divisiones disponibles:
+Marketing (29): Content Creator, TikTok Strategist,
+  SEO Expert, Email Marketer, Reddit Builder
+Ingeniería (25): Frontend Developer, Backend Architect,
+  DevOps, Security Engineer
+Ventas (8): Outbound Strategist, Discovery Specialist,
+  Deal Closer, Account Expansion
+Diseño (8): UI/UX Designer, Brand Guardian
+Paid Media (7): PPC Strategist, Search Analyst
+Testing (8): QA Specialist, Performance Benchmarker
+Project Mgmt (6): Portfolio Oversight, Producer
+Soporte (6): Customer Service, Analytics Expert
+Producto (5): Sprint Prioritizer, Product Manager
+Game Dev (15): Unity, Unreal, Cross-Engine
+Especializados (30): Multi-Agent Orchestrator, etc.
+Spatial Computing (6): XR, Vision Pro, WebXR
+
+### Flujos para tu negocio de agentes:
+
+LANZAR PRODUCTO:
+Frontend Developer → Backend Architect →
+Growth Hacker → Content Creator
+
+CAMPAÑA DE MARKETING:
+Content Creator → TikTok Strategist →
+Email Marketer → SEO Strategist
+
+CICLO COMPLETO DE CLIENTE:
+Outbound Strategist → Discovery Specialist →
+Deal Closer → Frontend Developer → Analytics Reporter
+
+### Tip clave:
+Combinar agentes en secuencia = resultado de agencia real
+Cada agente mantiene la misma personalidad de marca

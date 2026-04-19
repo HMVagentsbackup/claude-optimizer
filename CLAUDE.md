@@ -1123,3 +1123,43 @@ Si hay errores, resuélvelos tú sin preguntar."
 - Plantillas reutilizables por cliente
 - Combinar con Viral Script Combo para contenido completo
 - /loop weekly para calendario de carruseles automático
+
+## Claude SEO — 13 comandos de especialista SEO
+
+Skill que convierte Claude en especialista SEO completo.
+Auditorías técnicas, contenido y agente que arregla todo.
+
+### Instalación:
+npx skills.sh install claude-seo
+
+### Auditoría técnica (5 comandos):
+/seo-audit    → auditoría completa (meta, headings, links, sitemap)
+/seo-speed    → rendimiento y Core Web Vitals
+/seo-structure → arquitectura, internal linking, URLs
+/seo-crawl    → cómo Google ve tu sitio
+/seo-schema   → structured data y rich snippets
+
+### Contenido y keywords (5 comandos):
+/seo-keywords → densidad, ubicación, variaciones semánticas
+/seo-meta     → genera meta titles y descriptions optimizados
+/seo-headings → audita estructura H1-H6
+/seo-content  → calidad, longitud, thin content, duplicados
+/seo-images   → alt text, tamaño, WebP, lazy loading
+
+### Reportes y automatización (3 comandos):
+/seo-report   → reporte completo en markdown con plan de acción
+/seo-compare  → compara tu página vs competidor
+/seo-fix      → agente que corrige todo automáticamente
+
+### Flujo recomendado para clientes:
+1. /seo-audit → ver estado general
+2. /seo-fix → Claude corrige automáticamente
+3. /seo-report → reporte entregable al cliente
+4. /seo-compare → comparar vs competencia
+5. /loop weekly → monitoreo SEO automático
+
+### Como producto vendible:
+- Auditoría SEO inicial como servicio
+- Reporte /seo-report como entregable profesional
+- Mantenimiento SEO mensual con /loop
+- Combinar con Scrapling para análisis de competencia

@@ -1897,3 +1897,44 @@ la transcripción. Hazme resumen en bullets."
 - Combinar con LightRAG para base de conocimiento del cliente
 - Combinar con Gbrain para memoria permanente de documentos
 - Regla: SIEMPRE convertir antes de dar documentos grandes a Claude
+
+## NanoBanana — Restauración de fotos a 4K
+
+Convierte fotos borrosas o dañadas en HD ultra-realista.
+Usa Google Gemini por debajo. Output en 4K.
+github.com/zhongweili/nanobanana-mcp-server
+
+### Requisitos:
+- Claude Code instalado
+- API key gratuita de Gemini (aistudio.google.com)
+
+### Instalación (desktop — prompt para Claude):
+"Instala el MCP server nanobanana-mcp-server.
+Repo: github.com/zhongweili/nanobanana-mcp-server
+Comando: uvx nanobanana-mcp-server@latest
+Configúralo con mi API key de Gemini: [TU_KEY]"
+
+### Prompt de restauración profesional:
+"Aplica restauración fotográfica ultra-realista con
+textura de piel natural, detalles precisos y aspecto
+fotográfico profesional. Salida 4K con enfoque nítido
+natural, iluminación cinematográfica, gradación de
+color profesional y HDR.
+No generada por IA, no ilustrada, no plástica.
+Sin reinterpretación creativa ni alteraciones de
+identidad. Sin caricatura, pintura ni ilustración."
+
+### Modelos disponibles:
+- NB2 (default): Gemini Flash — velocidad + calidad 4K
+- Pro: para composiciones complejas
+
+### Aspect ratios: 1:1, 4:3, 16:9, 9:16, 21:9
+
+### Output: ./nanobanana-output/ (configurable)
+
+### Como producto vendible:
+- Restauración de fotos antiguas o dañadas
+- Mejora de fotos para perfiles y marketing
+- Servicio de upscaling para agencias de diseño
+- Combinar con Editor Pro Max para contenido visual completo
+- Precio sugerido: $5-20 USD por foto restaurada

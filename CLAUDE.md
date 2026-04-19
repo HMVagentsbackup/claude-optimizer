@@ -1784,3 +1784,35 @@ curl -fsSL https://raw.githubusercontent.com/Hainrixz/maia-skill/main/install.sh
 - Combinar con TradingView MCP para análisis técnico
 - Dashboard como entregable visual para clientes
 - Precio sugerido: $200-500 USD/mes por reporte semanal
+
+## Top nuevos — Abril 2026
+
+### Claude Code Ultimate Guide (3.3K estrellas):
+La guía más completa de Claude Code.
+228 templates + 271 preguntas quiz + 41 diagramas.
+Base de datos de seguridad: 24 CVEs + 655 skills maliciosos.
+Guías por rol: Tech Lead, CTO, PM, Developer.
+Instalación: git clone https://github.com/FlorianBruniaux/claude-code-ultimate-guide.git
+
+### Antigravity Awesome Skills (32.8K estrellas):
+1,400+ skills en un solo comando.
+Compatible con Claude Code, Cursor, Codex, Gemini.
+Bundles temáticos por área.
+Instalación: npx antigravity-awesome-skills
+github.com/sickn33/antigravity-awesome-skills
+
+### LightRAG (33.1K estrellas):
+RAG con grafos de conocimiento.
+Paper publicado EMNLP 2025 - Universidad de Hong Kong.
+Ideal para darle contexto preciso de documentos al agente.
+Backends: Neo4J, PostgreSQL, MongoDB, OpenSearch.
+WebUI para insertar, consultar y visualizar conocimiento.
+Citaciones automáticas con trazabilidad de fuentes.
+Instalación: pip install lightrag-hku
+github.com/hkuds/lightrag
+
+### Para agentes de clientes:
+- Ultimate Guide → referencia técnica para construir agentes
+- Antigravity Skills → 1,400 skills disponibles instantáneamente
+- LightRAG → dar a agentes acceso preciso a documentos del cliente
+  (manuales, contratos, bases de conocimiento internas)

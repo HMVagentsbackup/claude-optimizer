@@ -844,3 +844,50 @@ Deal Closer → Frontend Developer → Analytics Reporter
 ### Tip clave:
 Combinar agentes en secuencia = resultado de agencia real
 Cada agente mantiene la misma personalidad de marca
+
+## Cowork — Proyectos con contexto persistente
+
+Claude Desktop → sección Cowork → panel izquierdo
+Claude ya te conoce en cada proyecto. No repites contexto.
+
+### Crear proyecto:
+Projects → + → desde cero o desde carpeta existente
+
+### Instrucciones de proyecto (plantilla para clientes):
+"Eres mi asistente para [nombre cliente/proyecto]
+Formato: responde en español, bullet points, incluye métricas
+Reglas: nunca inventes datos, prioriza acciones concretas
+No hagas: no asumas presupuesto, no uses emojis en documentos"
+
+### Contexto que puedes agregar:
+- Carpetas locales del proyecto
+- Archivos (PDFs, Excel, imágenes)
+- URLs de páginas web relevantes
+
+### Tareas programadas (la función más poderosa):
+Frecuencia: cada hora, diario, semanal, cron personalizado
+Modelo: Haiku para simple, Sonnet para razonamiento
+
+TAREA — RESUMEN SEMANAL:
+"Cada lunes 9am:
+1. Revisa carpeta /Documentos/Reportes/
+2. Identifica archivos nuevos últimos 7 días
+3. Extrae puntos clave de cada uno
+4. Genera resumen en /Documentos/resumen-semanal.md
+5. Marca URGENTE lo crítico"
+
+TAREA — MONITOREO DE COMPETENCIA:
+"Cada miércoles 8am:
+1. Visita [URLs competidores]
+2. Extrae precios actuales
+3. Compara con precios-actuales.csv
+4. Genera reporte de diferencias
+5. Marca ALERTA si bajaron más de 10%"
+
+### Keep Awake:
+Settings → General → Keep computer awake → activar
+Necesario para que tareas programadas corran solas
+
+### El nuevo paradigma:
+Antes: abres Claude para decirle qué hacer
+Ahora: abres Claude para ver qué hizo

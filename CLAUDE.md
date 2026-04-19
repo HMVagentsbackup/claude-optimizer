@@ -1743,3 +1743,44 @@ cargo-audit → dependencias Rust
 - Correr antes de cada deploy con /loop
 - Combinar con G Stack /cso para seguridad completa
 - Precio sugerido: $300-1,000 USD por auditoría
+
+## Maia Skill — Análisis de mercados multi-agente
+
+5 agentes especializados en paralelo. Dashboard interactivo.
+Datos en tiempo real. 100% local.
+⚠️ Solo informativo — no es asesoría financiera.
+Open source: github.com/Hainrixz/maia-skill
+
+### Instalación (desktop):
+curl -fsSL https://raw.githubusercontent.com/Hainrixz/maia-skill/main/install.sh | bash
+
+### Los 5 agentes:
+- Crypto: Bitcoin, Ethereum y más
+- Acciones: S&P 500, NASDAQ y más
+- Divisas: USD/MXN, DXY y más
+- Materiales: Oro, petróleo y más
+- Estrategia: combina todo y recomienda
+
+### Cómo usarlo:
+"Hazme un análisis de inversión"
+"Analiza los mercados"
+"¿Cuáles son las mejores oportunidades hoy?"
+→ Elige perfil: conservador, moderado o agresivo
+→ Dashboard abre en localhost:3420
+
+### Dashboard incluye:
+- Distribución de portafolio por sector
+- Rankings por riesgo con puntuación de confianza
+- Análisis por activo (precio, cambio 24h/7d/30d)
+- Bilingüe español/inglés
+
+### Análisis automáticos con /loop:
+/loop 24h /investment-analysis  → diario
+/loop 168h /investment-analysis → semanal
+
+### Como producto para clientes:
+- Reportes de mercado para traders e inversores
+- Análisis semanal automatizado como servicio
+- Combinar con TradingView MCP para análisis técnico
+- Dashboard como entregable visual para clientes
+- Precio sugerido: $200-500 USD/mes por reporte semanal

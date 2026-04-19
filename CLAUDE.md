@@ -1997,3 +1997,55 @@ y agrega pasto con material verde natural."
 - Escenas para presentaciones y pitches
 - Combinar con Editor Pro Max para video completo
 ⚠️ Siempre guardar archivo antes de trabajar con Claude
+
+## Ultra Plan — Revisa antes de construir
+
+Claude planea en la nube mientras tu terminal queda libre.
+Revisas el plan en el navegador, comentas y ajustas.
+Luego ejecutas en la nube (PR automático) o en local.
+
+### Requisitos:
+- Claude Code versión 2.1.91+
+- Cuenta Claude Code on the web activa
+- Repositorio GitHub conectado
+- No disponible en Bedrock, Vertex ni Foundry
+- En research preview
+
+### Uso:
+/ultraplan [descripción de lo que quieres construir]
+
+### Flujo:
+1. Escribes /ultraplan + descripción
+2. Claude planea en la nube — terminal queda libre
+3. Ves ◆ ultraplan ready → abres link en navegador
+4. Revisas sección por sección, dejas comentarios
+5. Iteras hasta que quede perfecto
+6. Eliges: ejecutar en nube (PR automático) o en local
+
+### Prompts listos:
+
+MIGRACIÓN CRÍTICA:
+"/ultraplan migrar autenticación de sesiones a JWT
+manteniendo usuarios existentes, sin romper sesiones
+activas y actualizando los tests"
+
+REDISEÑO UI:
+"/ultraplan rediseñar dashboard con Tailwind v4
+y dark mode, reutilizando componentes shadcn
+y manteniendo rutas del App Router"
+
+FEATURE COMPLETA:
+"/ultraplan añadir sistema de suscripciones con Stripe:
+pricing page, checkout, webhooks para renovaciones
+y panel de usuario para gestionar su plan"
+
+### Cuándo usarlo:
+- Cambios grandes en código crítico
+- Refactors con muchos archivos
+- Features con múltiples piezas (DB, API, UI)
+- Cualquier tarea donde no quieras repetir trabajo
+
+### Para agentes de clientes:
+- Planear el agente antes de construirlo
+- Revisar arquitectura con el cliente antes de ejecutar
+- PR automático como entregable visible

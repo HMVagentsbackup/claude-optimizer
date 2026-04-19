@@ -1358,3 +1358,55 @@ sessions/  → conversaciones archivadas
 - Claude recuerda todo del cliente en cada sesión
 - /autoresearch para investigar la industria del cliente
 - Regla de oro: nunca tocar carpetas a mano
+
+## Skill Seekers + Obsidian — Pipeline de conocimiento
+
+Convierte cualquier fuente en contexto para Claude.
+Pipeline: Recopilar → Organizar → Trabajar con Claude.
+
+### Las 3 herramientas:
+1. Skill Seekers → extrae info de cualquier fuente
+2. Obsidian → organiza y conecta notas localmente
+3. obsidian-skills → Claude escribe en formato Obsidian nativo
+
+### Skill Seekers — fuentes que procesa:
+Webs, GitHub, PDFs, YouTube, Notion, Confluence,
+Slack, Discord, RSS, Jupyter, Word, PowerPoint
+
+Instalación: pip install skill-seekers
+
+3 comandos esenciales:
+skill-seekers create [URL o archivo]
+skill-seekers enhance skill-seekers-output/
+skill-seekers package skill-seekers-output/ --target claude
+
+### obsidian-skills — instalación:
+claude install-skill https://github.com/kepano/obsidian-skills
+Habilidades: obsidian-markdown, obsidian-bases,
+json-canvas, obsidian-cli, defuddle
+
+### Prompts del pipeline completo:
+
+ANALIZAR REPOSITORIO:
+"Usa Skill Seekers para extraer [URL repo]:
+skill-seekers create [URL]
+skill-seekers enhance skill-seekers-output/
+skill-seekers package skill-seekers-output/ --target claude
+Crea notas en Obsidian: qué hace, estructura,
+conceptos clave, cómo empezar. Usa wikilinks."
+
+VIDEO DE YOUTUBE A NOTAS:
+"Extrae contenido de [URL video] con Skill Seekers.
+Crea nota en Obsidian con: resumen 5 bullets,
+conceptos clave, pasos accionables, links relacionados."
+
+INVESTIGAR TEMA DESDE MÚLTIPLES FUENTES:
+"Extrae de [URL1], [URL2], [URL3] con Skill Seekers.
+Crea: nota principal, notas por concepto,
+nota de preguntas pendientes. Conectar con wikilinks."
+
+### Tips clave:
+- Siempre usar enhance antes de package
+- --target claude hace la diferencia en calidad
+- Un vault por cliente/proyecto
+- Abrir Claude Code desde dentro del vault

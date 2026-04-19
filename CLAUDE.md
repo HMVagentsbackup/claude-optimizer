@@ -1085,3 +1085,41 @@ Al final marca dónde va cada corte de edición."
 - Scripts en múltiples idiomas con la voz del cliente
 - Combinar con Last30Days para temas trending
 - /loop weekly para calendario de contenido automático
+
+## Open Carrusel — Agente de carruseles de Instagram
+
+Reemplaza Canva. Gratis, local, sin suscripciones.
+Sin marca de agua. Sin subir nada a la nube.
+Open source MIT: github.com/Hainrixz/open-carrusel
+
+### Instalación (desktop — un solo prompt):
+"Instala y arranca open-carrusel desde cero.
+Repo: https://github.com/Hainrixz/open-carrusel
+1. Clona en Desktop
+2. npm install
+3. npm run setup
+4. npm run dev
+5. Abre http://localhost:3000
+Si hay errores, resuélvelos tú sin preguntar."
+
+### Flujo de uso:
+1. Subir referencias de carruseles que te gustan
+2. Configurar marca en /data/brand.json
+   (colores, fuentes, logo — una sola vez)
+3. "Haz carrusel de 6 slides sobre [tema], tono [X]"
+4. Editar arrastrando slides + historial por slide
+5. Exportar: 1:1, 4:5 o 9:16 (tamaño exacto Instagram)
+
+### Comandos dentro del proyecto:
+/start  → arranca el servidor
+/stop   → detiene el servidor
+/reset  → limpia datos locales
+/doctor → diagnóstico de entorno
+
+### Como producto para clientes:
+- Carruseles educativos para coaches y creadores
+- Promos de producto consistentes con su marca
+- Storytelling de marca (antes/después)
+- Plantillas reutilizables por cliente
+- Combinar con Viral Script Combo para contenido completo
+- /loop weekly para calendario de carruseles automático

@@ -1611,3 +1611,48 @@ Instagram Feed, LinkedIn, Twitter/X, Facebook
 - Edición de podcasts y vlogs
 - Combinar con Viral Script Combo para pipeline completo
 - Batch render: múltiples formatos de un solo video
+
+## The Architect — Plano completo de 16 secciones
+
+Describe tu idea → plano completo → Claude Code construye solo.
+Open source: github.com/Hainrixz/the-architect
+
+### Instalación (desktop):
+git clone https://github.com/Hainrixz/the-architect.git && cd the-architect && claude
+
+### Cómo funciona:
+1. Describes tu idea (SaaS, app, agente, lo que sea)
+2. The Architect te hace preguntas específicas
+3. Genera plano completo de 16 secciones
+4. Metes el plano en carpeta nueva como CLAUDE.md
+5. Abres Claude Code → construye sin preguntarte nada
+
+### Atajo — Just Build It:
+Escribe "Just Build It" o "Solo constrúyelo"
+The Architect elige las mejores opciones por ti automáticamente
+
+### Las 16 secciones del plano:
+01. Visión del proyecto
+02. Stack tecnológico
+03. Estructura de directorios
+04. Esquemas de base de datos
+05. Especificaciones de API
+06. Arquitectura frontend
+07. Diseño visual (colores, tipografía)
+08. Flujos de autenticación
+09. Orden de construcción ★ (paso a paso para Claude)
+10. Configuración de entorno
+11. Dependencias y librerías
+12. Deploy (cómo y dónde publicar)
+13. Testing (qué y cómo probar)
+14. Skills recomendados de Claude Code
+15. Instrucciones del builder (CLAUDE.md)
+16. Restricciones y reglas
+
+### Para agentes de clientes:
+- Usar The Architect ANTES de construir cualquier agente
+- El plano se convierte en el CLAUDE.md del proyecto del cliente
+- Sección 09 (orden de construcción) = instrucciones para Claude
+- Sección 16 (restricciones) = reglas de seguridad del cliente
+- Tip: ser específico → "agente de WhatsApp para clínica dental
+  con integración a Google Calendar y respuesta en menos de 30s"

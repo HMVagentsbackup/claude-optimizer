@@ -621,3 +621,40 @@ Ad Account → Campaign → Ad Set → Ad → Ad Creative
 - Reportes automáticos semanales con /loop weekly
 - Monitoreo de campañas con /loop 4h
 - Combinar con Managed Agents para gestión 24/7
+
+## Investigador Automático — Last 30 Days Skill
+
+Investiga cualquier tema en 8 plataformas de los últimos 30 días.
+Genera reporte completo con links. Tarda 2-8 minutos.
+Gratis y open source.
+
+### Instalación:
+/plugin marketplace add mvanhorn/last30days-skill
+/plugin install last30days@last30days-skill
+
+### Plataformas sin API key (funcionan de inmediato):
+Reddit, Hacker News, Polymarket
+
+### Plataformas con API key:
+YouTube, X/Twitter, Bluesky, TikTok, Instagram Reels
+
+### Comandos:
+/last30days [tema]              → reporte completo 30 días
+/last30days --compare "A vs B" → comparar dos temas
+/last30days --quick [tema]      → búsqueda rápida
+/last30days --days 7 [tema]     → últimos 7 días
+
+### Para clientes — prompts listos:
+"Investiga tendencias de [industria del cliente]
+en los últimos 30 días"
+
+"Compara [herramienta A] vs [herramienta B] —
+¿qué dice la comunidad?"
+
+"Investiga a [competidor] — qué está haciendo
+en redes en los últimos 30 días"
+
+### Combinar con /loop:
+/loop weekly → reporte semanal automático de tendencias
+/loop daily → monitoreo diario del nicho del cliente
+Cada reporte se guarda automáticamente como Markdown

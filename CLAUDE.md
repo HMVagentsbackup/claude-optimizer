@@ -1223,3 +1223,46 @@ Compílalo, corrige errores y agrégalo al chart"
 - Reportes diarios de mercado con /loop daily
 - Agente de alertas 24/7 con Managed Agent
 - Backtesting de estrategias como servicio
+
+## 5 Herramientas esenciales 2026
+
+### 1. Superpowers (103K estrellas):
+Piloto automático con subagentes. TDD obligatorio.
+Revisión de código en dos etapas.
+Instalación: npx superpowers@latest init
+github.com/obra/superpowers
+
+### 2. Everything Claude Code (50K estrellas):
+28 agentes especializados + 116 skills + 59 comandos.
+Ganador Anthropic Hackathon Feb 2026.
+Comandos: /plan, /tdd, /code-review, /verify
+AgentShield: escáner de vulnerabilidades 102 reglas
+Instalación: git clone https://github.com/affaan-m/everything-claude-code.git
+github.com/affaan-m/everything-claude-code
+
+### 3. UI UX Pro Max:
+67 estilos de UI + 161 reglas por industria.
+161 paletas de color + 57 combinaciones tipografía.
+13 tech stacks: React, Next.js, Vue, Svelte, Flutter, etc.
+Instalación: npx uipro-cli@latest init
+github.com/nextlevelbuilder/ui-ux-pro-max-skill
+
+### 4. claude-mem (39K estrellas):
+Memoria permanente con búsqueda semántica.
+SQLite + Chroma. Visor web en localhost:37777.
+Control de privacidad con etiquetas <private>
+Instalación: npx claude-mem@latest init
+github.com/thedotmack/claude-mem
+
+### 5. n8n-MCP (15K estrellas):
+Claude arma automatizaciones n8n completas.
+1,084 nodos + 2,709 templates disponibles.
+Instalación: npx n8n-mcp@latest
+github.com/czlonkowski/n8n-mcp
+
+### Para agentes de clientes:
+- Superpowers → construir agentes complejos
+- Everything Claude Code → departamento de ingeniería
+- UI UX Pro Max → diseño profesional por industria
+- claude-mem → memoria entre sesiones de trabajo
+- n8n-MCP → automatizaciones sin código para clientes

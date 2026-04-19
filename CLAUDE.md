@@ -1656,3 +1656,45 @@ The Architect elige las mejores opciones por ti automáticamente
 - Sección 16 (restricciones) = reglas de seguridad del cliente
 - Tip: ser específico → "agente de WhatsApp para clínica dental
   con integración a Google Calendar y respuesta en menos de 30s"
+
+## Stack App Móvil IA — De idea a App Store
+
+Stack recomendado: Rork + Claude Opus 4.6 +
+Supabase + Stripe + Vercel/App Store/Play Store
+
+### Herramientas y para qué:
+- Rork: construir app móvil con IA sin infraestructura manual
+- Claude Opus 4.6: generar y revisar lógica, UI y backend
+- Supabase: auth, base de datos y APIs (free tier generoso)
+- Stripe: cobros y suscripciones desde el MVP
+- Vercel: lanzar versión web primero para validar
+- App Store ($99/año) / Play Store ($25 pago único)
+
+### Costos por escenario:
+Mínimo (web-first): $0-20 USD/mes
+Creator (stack pagado base): $45-120 USD/mes
+Pro (móvil completo): $200+ USD/primer año
+
+### Flujo operativo:
+1. Definir idea, usuario y alcance v1
+2. Construir MVP en Rork con prompts claros
+3. Conectar Supabase (auth + datos)
+4. Integrar Stripe cuando tengas propuesta de valor
+5. QA: login, flujo principal, errores, rendimiento
+6. Publicar en Vercel primero → validar → luego stores
+7. Medir, feedback, iteraciones semanales
+
+### Checklist de lanzamiento:
+- MVP sin errores críticos en flujo principal
+- Métricas mínimas definidas (activación, retención)
+- Auth y base de datos en producción
+- Pagos probados (éxito y falla)
+- Capturas y metadata para stores listas
+- Plan de soporte post-lanzamiento
+
+### Como producto vendible:
+- Apps móviles con IA para clientes por industria
+- Estrategia: web primero → validar → stores
+- Cobrar por app + mantenimiento mensual
+- Combinar con WhatsApp AgentKit para engagement
+- Combinar con Auto-CRM para gestión de usuarios

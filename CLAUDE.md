@@ -752,3 +752,45 @@ Combinar con /loop weekly o Managed Agent
 - No acelerar el rate limiting de Scrapling
 - Solo datos comerciales públicos (no datos personales)
 - En prospección: identificarse y ofrecer opt-out
+
+## Auto-CRM — Tu propio CRM gratis
+
+CRM completo local. Sin Salesforce, sin HubSpot, sin mensualidad.
+SQLite local — tus datos nunca salen de tu máquina.
+Open source: github.com/Hainrixz/auto-crm
+
+### Instalación (desktop):
+git clone https://github.com/Hainrixz/auto-crm.git && cd auto-crm && npm install && npm run dev
+Abrir: http://localhost:3000
+
+### Primer paso después de instalar:
+Abrir Claude Code dentro del proyecto → /setup
+
+### 8 comandos de Claude Code incluidos:
+/setup          → configurar CRM desde cero
+/add-contact    → agregar contacto nuevo
+/search         → buscar contactos o deals
+/metrics        → métricas del pipeline
+/follow-ups     → seguimientos pendientes
+/import-csv     → importar desde Excel/CSV
+/classify       → clasificar leads con IA
+/digest         → resumen diario por email
+
+### Variables opcionales (.env):
+ANTHROPIC_API_KEY → clasificación de leads con IA
+RESEND_API_KEY    → resumen diario por email
+DIGEST_EMAIL      → correo donde llega el resumen
+
+### 10 herramientas MCP incluidas:
+list_contacts, search_contacts, get_contact,
+list_deals, get_deal, get_pipeline_metrics,
+list_activities, get_follow_ups, classify_leads,
+get_dashboard_summary
+
+### Como producto para clientes:
+- Un CRM personalizado por cliente/negocio
+- Personalizar con Claude Code en español sin código
+- Deploy en servidor propio con Docker:
+  docker compose up -d
+- Conectar con webhooks de Typeform, Tally, Google Forms
+- Combinar con agente WhatsApp para leads automáticos

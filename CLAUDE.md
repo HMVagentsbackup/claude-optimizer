@@ -1044,3 +1044,44 @@ Google Ads, TikTok, LinkedIn, YouTube, Microsoft Ads
 - Gestión de campañas 24/7 con Managed Agent
 - Combinar con /loop weekly para reportes automáticos
 - Health Score como entregable para clientes
+
+## Viral Script Combo — Fábrica de videos virales
+
+3 herramientas gratis. Sin grabar. Sin escribir. Solo publicar.
+
+### 1. Awesome Claude Skills (habilidades virales):
+Instalar con este prompt en Claude Code:
+"Entra a https://github.com/ComposioHQ/awesome-claude-skills
+Busca habilidades de contenido viral y guiones.
+Instala la que sirva para hooks y videos virales.
+Úsala para todo lo que te pida de ahora en adelante."
+
+### 2. UltraThink (pensar más profundo):
+Agregar "ultrathink" antes de cualquier petición.
+Sin instalar nada — solo una palabra.
+Hace que Claude compare ángulos antes de responder.
+
+### 3. VoxCPM (clonar tu voz):
+git clone https://github.com/OpenBMB/VoxCPM.git && cd VoxCPM
+Graba 10-30 segundos de tu voz → VoxCPM la clona
+30 idiomas, calidad de estudio, gratis
+Prompt: "Instala VoxCPM, clona mi voz de [audio],
+lee este guion con mi voz: [guion]"
+
+### Prompt completo del combo:
+"ultrathink
+
+Escríbeme guion viral de 60 segundos para [plataforma].
+Tema: [tema]
+- Hook que detenga scroll en 3 segundos
+- Estructura: hook → problema → solución → prueba → CTA
+- Lenguaje natural, como hablarle a un amigo
+- Sin frases robóticas ni clichés de IA
+- Máximo 150 palabras
+Al final marca dónde va cada corte de edición."
+
+### Como producto para clientes:
+- Creación de contenido viral para redes sociales
+- Scripts en múltiples idiomas con la voz del cliente
+- Combinar con Last30Days para temas trending
+- /loop weekly para calendario de contenido automático

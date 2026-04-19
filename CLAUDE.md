@@ -1266,3 +1266,49 @@ github.com/czlonkowski/n8n-mcp
 - UI UX Pro Max → diseño profesional por industria
 - claude-mem → memoria entre sesiones de trabajo
 - n8n-MCP → automatizaciones sin código para clientes
+
+## Awesome LLM Apps — 100+ agentes listos para instalar
+
+106K+ estrellas. Apache 2.0 (libre para uso comercial).
+13 categorías de agentes listos para clonar e instalar.
+github.com/Shubhamsaboo/awesome-llm-apps
+
+### 4 agentes estrella para clientes:
+
+1. AI CONSULTANT AGENT:
+Analiza el negocio completo del cliente y da
+recomendaciones estratégicas en minutos.
+Carpeta: ai_agent_tutorials/ai_consultant_agent
+
+2. AI SALES INTELLIGENCE AGENT TEAM:
+Equipo de agentes de ventas. Investiga mercado,
+sugiere precios y arma estrategia de prospección.
+Carpeta: ai_agent_tutorials/ai_sales_intelligence_agent_team
+
+3. AI COMPETITOR INTELLIGENCE AGENT TEAM:
+Investiga competencia — qué hacen, cómo y dónde fallan.
+Carpeta: ai_agent_tutorials/ai_competitor_intelligence_agent_team
+
+4. CUSTOMER SUPPORT VOICE AGENT:
+Contesta llamadas de soporte 24/7 automáticamente.
+Carpeta: voice_ai_agents/customer_support_voice_agent
+
+### Prompt para encontrar agentes por negocio:
+"Clona https://github.com/Shubhamsaboo/awesome-llm-apps
+Mi negocio es: [descripción]
+Mis problemas principales: [lista]
+Recomiéndame 3-5 agentes. Para cada uno: qué hace,
+por qué me sirve y cómo instalarlo paso a paso."
+
+### Prompt para instalar agente específico:
+"En awesome-llm-apps busca el agente [nombre].
+1. Clona el repo
+2. Entra a su carpeta
+3. Instala dependencias
+4. Configura API keys
+5. Ejecuta y verifica"
+
+### 13 categorías disponibles:
+Agentes iniciales, Agentes avanzados, Multi-agente,
+Voz, MCP, RAG, Memoria, Chat, Optimización,
+Fine-tuning, Skills, Juegos, Crash Courses

@@ -1312,3 +1312,49 @@ por qué me sirve y cómo instalarlo paso a paso."
 Agentes iniciales, Agentes avanzados, Multi-agente,
 Voz, MCP, RAG, Memoria, Chat, Optimización,
 Fine-tuning, Skills, Juegos, Crash Courses
+
+## Claude Obsidian — Segunda cabeza con memoria permanente
+
+Todo lo que aprendes con Claude queda guardado para siempre
+en Obsidian. Claude llena, conecta y organiza las notas solo.
+github.com/AgriciDaniel/claude-obsidian
+
+### Requisitos:
+- Obsidian (obsidian.md) — gratis
+- Claude Code abierto dentro de la carpeta de Obsidian
+
+### Instalación (prompt todo-en-uno):
+"Instala claude-obsidian desde
+https://github.com/AgriciDaniel/claude-obsidian
+1. claude plugin marketplace add AgriciDaniel/claude-obsidian
+2. claude plugin install claude-obsidian@claude-obsidian-marketplace
+3. Corre /wiki para crear estructura inicial
+4. Resume comandos disponibles en español"
+
+### Estructura que crea /wiki:
+concepts/  → ideas grandes y aprendizajes
+sources/   → libros, posts, videos de referencia
+entities/  → personas, empresas, productos
+sessions/  → conversaciones archivadas
+
+### 3 comandos del día a día:
+/save              → guarda conversación actual como notas conectadas
+/autoresearch [tema] → investiga en internet y agrega al vault
+/canvas [desc]     → crea diagrama visual con tus notas
+
+### El loop que lo hace mágico:
+1. Arrastrar material crudo a carpeta .raw/
+2. ingest [nombre del archivo]
+3. Claude crea 8-15 páginas conectadas automáticamente
+4. Si hay contradicciones con notas viejas → marca [!contradiction]
+
+### Consultar tu segunda cabeza:
+"qué sabes sobre [tema]"
+→ Claude responde citando TUS notas, no su entrenamiento
+
+### Para tu negocio de agentes:
+- Un vault por cliente con toda su información
+- ingest de juntas, emails y documentos del cliente
+- Claude recuerda todo del cliente en cada sesión
+- /autoresearch para investigar la industria del cliente
+- Regla de oro: nunca tocar carpetas a mano

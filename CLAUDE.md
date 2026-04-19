@@ -576,3 +576,48 @@ y avísame cuando bajen de [precio]"
 /loop daily → monitoreo automático de competencia
 /loop 4h → vigilar precios en tiempo real
 /loop weekly → reporte de análisis de mercado
+
+## Meta Ads MCP — Gestión de campañas con Claude
+
+### Reglas de seguridad CRÍTICAS (nunca violar):
+- SIEMPRE crear campañas/adsets/ads en status: PAUSED
+- SIEMPRE mostrar resumen y pedir confirmación antes de ejecutar
+- NUNCA subir presupuesto >$100 sin confirmación explícita
+- NUNCA modificar spending limits sin aprobación humana
+- Todos los presupuestos en CENTAVOS ($50 = 5000)
+- Registrar TODAS las escrituras en logs/api_actions.log
+
+### Setup (desktop):
+1. Crear app en Meta Developers → generar token System User
+2. Guardar en .env: META_ACCESS_TOKEN, META_AD_ACCOUNT_ID, META_PAGE_ID
+3. Configurar .mcp.json con meta-ads MCP server
+4. Verificar con /mcp
+
+### Jerarquía Meta Ads:
+Ad Account → Campaign → Ad Set → Ad → Ad Creative
+
+### Objetivos de campaña:
+- OUTCOME_AWARENESS: reconocimiento de marca
+- OUTCOME_TRAFFIC: visitas web/app
+- OUTCOME_ENGAGEMENT: interacciones
+- OUTCOME_LEADS: formularios de leads
+- OUTCOME_SALES: conversiones/compras
+
+### Prompts esenciales para clientes:
+"Valida mi configuración Meta Ads MCP y dime qué falta"
+"Haz un dry-run de campaña OUTCOME_TRAFFIC en PAUSED con budget de prueba"
+"Genera reporte últimos 7 días: spend, CTR, CPC, conversiones y 3 recomendaciones"
+
+### Workflow para crear campaña:
+1. Definir objetivo, audiencia, presupuesto y creativos
+2. Verificar categorías especiales (crédito, empleo, vivienda, política)
+3. Revisar specs de imagen/video
+4. Ver resumen completo → aprobar
+5. Ejecutar: Campaign → Ad Set → Creative → Ad (todo PAUSED)
+6. Activar SOLO con aprobación humana explícita
+
+### Como producto para clientes:
+- Agente de Meta Ads para agencias de marketing
+- Reportes automáticos semanales con /loop weekly
+- Monitoreo de campañas con /loop 4h
+- Combinar con Managed Agents para gestión 24/7

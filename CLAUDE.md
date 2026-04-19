@@ -1509,3 +1509,45 @@ npm run build   → versión de producción
 - Combinar con Claude Ads para campañas completas
 - Precio sugerido: $500-2,000 USD por landing page
 - Un repositorio clonado por cliente
+
+## Claude Code Game Studios — Estudio de videojuegos completo
+
+49 agentes especializados + 72 comandos.
+Sin saber programar. MIT license.
+9,556 estrellas: github.com/Donchitos/Claude-Code-Game-Studios
+
+### Motores disponibles:
+- Godot → más fácil, gratis, ideal para empezar
+- Unity → más usado en la industria, vender juegos
+- Unreal → gráficos AAA, juegos 3D ambiciosos
+
+### Instalación (desktop — prompt todo-en-uno):
+"Instala https://github.com/Donchitos/Claude-Code-Game-Studios
+1. Clona con git clone
+2. Lee README para estructura
+3. Copia /agents, /commands y config según el repo
+4. Resume agentes y comandos disponibles en español
+Pregúntame qué motor quiero antes de instalar."
+
+### 8 comandos más importantes:
+/brainstorm    → ideas de juegos y escoger una
+/design-system → mecánicas, reglas y loop central
+/dev-story     → programar una feature completa
+/qa-plan       → revisar bugs y plan de pruebas
+/art-direction → dirección visual, estilo y paleta
+/sound-design  → música y efectos del juego
+/playtest      → simula sesiones con jugadores
+/release-plan  → publicar en Steam, itch.io o móvil
+
+### Flujo de primer juego:
+1. /brainstorm → definir idea en una línea
+2. /design-system → cómo se juega
+3. /dev-story → primera feature
+4. /qa-plan → probar que funciona
+5. /release-plan → publicar
+
+### Como producto vendible:
+- Desarrollo de videojuegos indie para clientes
+- Prototipos de juegos para startups y empresas
+- Juegos educativos por industria
+- Experiencias gamificadas para onboarding de clientes

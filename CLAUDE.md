@@ -700,3 +700,55 @@ claude "Migra de Whapi a Meta Cloud API"
 - Whapi: sandbox gratis para demos
 - Railway: plan gratis para empezar
 - Ideal para: restaurantes, clínicas, salones, inmobiliarias
+
+## Scrapling — Fábrica de leads gratis
+
+Extrae listas de clientes de Google Maps, directorios
+y redes sociales. Sin pagar agencias de leads.
+37,500+ estrellas GitHub. Licencia BSD-3 (uso comercial OK)
+github.com/D4Vinci/Scrapling
+
+### Instalación (desktop — prompt para Claude):
+"Instala Scrapling con MCP integrado:
+1. Verifica Python 3.10+ y uv instalados
+2. uv pip install scrapling[all]
+3. scrapling install (navegadores camuflados)
+4. Lee README para comando MCP exacto
+5. Agrega a claude_desktop_config.json
+6. Prueba con búsqueda simple"
+Después: reiniciar Claude Desktop completamente
+
+### Prompt base para leads:
+"Usa Scrapling para armarme lista de 50 [profesión]
+en [ciudad]. Quiero: nombre, teléfono, dirección,
+calificación Google Maps, reseñas, sitio web.
+Limpia duplicados. Exporta a CSV en Desktop
+como leads-[profesión]-[ciudad].csv"
+
+### 3 productos vendibles:
+
+1. LISTA DE NICHO LOCAL (~$500 USD):
+Todos los [profesión] de una ciudad con datos completos
+Ordenar por número de reseñas (más activos primero)
+
+2. NEGOCIOS SIN WEB (~$200 USD por lista):
+"Saca 100 restaurantes en [ciudad]. Filtra SOLO
+los que NO tienen sitio web propio.
+CSV con nombre, teléfono, calificación, reseñas"
+
+3. MONITOREO DE COMPETENCIA (~$500 USD/mes):
+"Extrae precios de estas URLs: [lista]
+Compara con mis precios en [archivo]
+¿Dónde pierdo ventas? ¿Dónde dejo dinero?"
+
+### Agente semanal automático:
+"Cada lunes busca [criterio] con Scrapling,
+compara con leads-maestros.csv,
+agrega solo nuevos y mándame resumen"
+Combinar con /loop weekly o Managed Agent
+
+### Reglas éticas:
+- Respetar robots.txt y términos del sitio
+- No acelerar el rate limiting de Scrapling
+- Solo datos comerciales públicos (no datos personales)
+- En prospección: identificarse y ofrecer opt-out

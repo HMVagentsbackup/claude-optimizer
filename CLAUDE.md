@@ -1465,3 +1465,47 @@ HERRAMIENTAS:
 - /canary para vigilar que todo funcione post-deploy
 - /retro semanal como entregable al cliente
 - /cso para auditoría de seguridad
+
+## Claude Web Builder — Landing pages profesionales sin código
+
+Genera landing pages completas respondiendo preguntas.
+Deploy a Vercel incluido. Sin saber programar.
+Open source: github.com/Hainrixz/claude-webkit
+
+### Instalación (desktop):
+git clone https://github.com/Hainrixz/claude-webkit.git
+cd claude-webkit
+claude
+
+### Tech stack incluido automáticamente:
+Next.js 15, Tailwind CSS 4, shadcn/ui,
+TypeScript, Framer Motion (animaciones)
+
+### 6 fases automáticas:
+1. Preguntas sobre el negocio (4 rondas en español)
+2. Aprobación del plan visual (colores, tipografía, estilo)
+3. Construcción automática de todos los componentes
+4. Vista previa local en el navegador
+5. Refinamiento iterativo con cambios al instante
+6. Deploy a Vercel con URL real
+
+### 13 habilidades pre-instaladas:
+Design Methodology, Component Architecture,
+Performance Optimization, Deployment Automation,
+Humanizer, SEO Fundamentals, Accessibility,
+Responsive Design, Animation System,
+Content Strategy, Color Theory,
+Typography System, Code Quality
+
+### Comandos:
+claude          → inicia el builder
+npm run dev     → ver página en navegador
+npm run build   → versión de producción
+
+### Como producto vendible:
+- Landing pages para clientes sin costo de diseñador
+- Portfolio de páginas reutilizables por industria
+- Combinar con Claude SEO para optimización completa
+- Combinar con Claude Ads para campañas completas
+- Precio sugerido: $500-2,000 USD por landing page
+- Un repositorio clonado por cliente

@@ -1858,3 +1858,42 @@ Formato: limpio, secciones, listo para compartir."
 - Contenido en otro idioma → texto listo para traducir
 - Pipeline: Vibe Voice → Claude → Editor Pro Max → video
 - Combinar con /loop para transcripción automática de juntas diarias
+
+## Microsoft MarkItDown — Ahorra tokens con documentos
+
+Convierte PDFs, Word, Excel y más a Markdown limpio.
+Claude lo lee rapidísimo y gasta mucho menos tokens.
+100K+ estrellas. Gratis. github.com/microsoft/markitdown
+
+### Instalación (decirle a Claude):
+"Instala MarkItDown de Microsoft desde
+https://github.com/microsoft/markitdown
+Úsala cada vez que te pida convertir un archivo
+a Markdown antes de leerlo."
+
+### Archivos que convierte:
+PDF, Word (.docx), Excel (.xlsx), PowerPoint (.pptx),
+Imágenes con texto, Audios (transcribe solo),
+Videos de YouTube (por link), HTML, CSV, JSON, XML, ZIP
+
+### Prompts de uso:
+
+CONVERTIR PDF:
+"Usa MarkItDown para convertir [ruta/archivo.pdf]
+a Markdown. Léelo y resúmelo en español con
+los puntos más importantes."
+
+CONVERTIR EXCEL:
+"Convierte [ruta/reporte.xlsx] con MarkItDown
+y dime las 5 cosas más importantes de la tabla."
+
+VIDEO DE YOUTUBE:
+"Usa MarkItDown con [URL YouTube] para sacar
+la transcripción. Hazme resumen en bullets."
+
+### Por qué importa para tu negocio:
+- Documentos del cliente → MarkItDown → Claude
+- Contratos, manuales, reportes sin quemar tokens
+- Combinar con LightRAG para base de conocimiento del cliente
+- Combinar con Gbrain para memoria permanente de documentos
+- Regla: SIEMPRE convertir antes de dar documentos grandes a Claude

@@ -2049,3 +2049,64 @@ y panel de usuario para gestionar su plan"
 - Planear el agente antes de construirlo
 - Revisar arquitectura con el cliente antes de ejecutar
 - PR automático como entregable visible
+
+## Animaciones — Videos con Remotion + Codex
+
+Pipeline para crear videos con Remotion desde cero.
+Un comando instala todo y deja preview corriendo.
+github.com/Hainrixz/tododeia-animaciones
+
+### Instalación (desktop):
+macOS/Linux:
+bash <(curl -fsSL https://raw.githubusercontent.com/Hainrixz/tododeia-animaciones/main/install.sh)
+
+Instala automáticamente: Codex CLI, git, node, npm,
+cloudflared, skills de video, proyecto Remotion
+y preview con URL pública por túnel.
+
+### Flujo recomendado:
+1. Describir video: objetivo, duración, formato (16:9 o 9:16), estilo
+2. Revisar preview local y marcar cambios por escena
+3. Iterar hasta cerrar narrativa, ritmo y transiciones
+4. Exportar solo cuando esté conforme
+
+---
+
+## Instant Landing — Landing completa en 3 preguntas
+
+System prompt que construye landing page completa
+en una sola ejecución. Compatible con Claude Code,
+Codex, Antigravity, Gemini CLI.
+
+### Flujo:
+1. Copiar system prompt (ver abajo)
+2. Responder 3 preguntas del negocio
+3. Agente instala skills + construye + valida
+
+### 3 preguntas:
+1. Nombre del negocio y a qué se dedica
+2. Estilo visual y paleta de colores
+3. Referencias y requisitos obligatorios
+
+### Estructura mínima que construye:
+Navbar, Hero + CTA, Franja de confianza,
+Servicios, Beneficios, Proceso, Testimonios,
+Contacto con formulario, Footer
+
+### Validaciones automáticas:
+lint → build → servidor local → URL localhost
+
+### Prompt corto para usar:
+"Quiero una landing page completa en una ejecución.
+- Negocio: [nombre + descripción]
+- Estilo + colores: [descripción]
+- Referencias: [URLs o requisitos]
+Máximo 3 preguntas, luego ejecuta.
+Busca e instala skills de Vercel.
+Corre lint + build + dev. Entrega resumen y localhost."
+
+### Como producto vendible:
+- Landing pages express para clientes urgentes
+- Combinar con Claude Web Builder para diseño avanzado
+- Combinar con Claude SEO para optimización
+- Precio sugerido: $300-800 USD por landing express

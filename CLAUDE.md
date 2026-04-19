@@ -1551,3 +1551,63 @@ Pregúntame qué motor quiero antes de instalar."
 - Prototipos de juegos para startups y empresas
 - Juegos educativos por industria
 - Experiencias gamificadas para onboarding de clientes
+
+## Editor Pro Max — Estudio de video con IA
+
+De descripción en español a MP4 profesional.
+Sin After Effects, sin suscripciones. 100% local.
+Open source: github.com/Hainrixz/editor-pro-max
+
+### Tech stack:
+Remotion 4.0, FFmpeg, Whisper.cpp (transcripción local),
+React 19, TypeScript, Sharp
+
+### Instalación (desktop):
+git clone https://github.com/Hainrixz/editor-pro-max.git
+cd editor-pro-max && npm install
+claude
+npm run dev → preview en localhost:3000
+
+### 9 templates incluidos:
+TikTok (9:16), Instagram Reel, YouTube Short,
+Presentación (16:9), Testimonial, Talking Head,
+Podcast Clip, Anuncio, Before/After
+
+### Capacidades:
+
+CREAR DESDE CERO:
+- TikToks y Reels con animaciones
+- Presentaciones con transiciones
+- Videos explicativos y anuncios
+
+EDITAR VIDEO EXISTENTE:
+- Subtítulos automáticos (5 presets: classic, bold, outline, glow, box)
+- Remoción de silencios automática
+- Jump cuts automáticos
+- Remoción de fondo con IA
+
+### Prompts para clientes:
+
+TIKTOK DESDE CERO:
+"Crea TikTok de 30 segundos para [producto].
+Estilo moderno. Texto animado + 3 beneficios + CTA.
+Colores: [marca]. Formato 9:16."
+
+SUBTÍTULOS AUTOMÁTICOS:
+"Agrega subtítulos a [ruta/video.mp4].
+Preset 'bold'. Transcribe con Whisper y sincroniza."
+
+LIMPIAR VIDEO:
+"Elimina silencios >0.5s de [ruta/video.mp4].
+Aplica jump cuts automáticos. Exporta MP4 16:9."
+
+### Plataformas soportadas:
+TikTok, YouTube, YouTube Shorts, Instagram Reels,
+Instagram Feed, LinkedIn, Twitter/X, Facebook
+
+### Como producto vendible:
+- Videos de marketing para clientes
+- Subtítulos automáticos para contenido existente
+- Edición de podcasts y vlogs
+- Combinar con Viral Script Combo para pipeline completo
+- Batch render: múltiples formatos de un solo video

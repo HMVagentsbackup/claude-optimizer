@@ -1816,3 +1816,45 @@ github.com/hkuds/lightrag
 - Antigravity Skills → 1,400 skills disponibles instantáneamente
 - LightRAG → dar a agentes acceso preciso a documentos del cliente
   (manuales, contratos, bases de conocimiento internas)
+
+## Vibe Voice — Transcripción gratis con Microsoft
+
+Transcribe audio/video en 50+ idiomas con identificación de hablantes.
+38K+ estrellas. Gratis, open source, corre local.
+github.com/microsoft/VibeVoice
+
+### Instalación (desktop — prompt para Claude):
+"Ve a https://github.com/microsoft/VibeVoice
+Lee el README e instálame Vibe Voice.
+Quiero transcribir audio/video localmente.
+Explícame qué vas haciendo en cada paso."
+
+### Capacidades:
+- 50+ idiomas
+- Hasta 60 minutos de audio por pasada
+- Identifica quién dijo qué (diarización)
+- Timestamps automáticos
+- 100% local — sin suscripciones
+
+### Prompt de procesamiento post-transcripción:
+"Acabo de transcribir con Vibe Voice:
+[TRANSCRIPCIÓN]
+1. Identifica quién dijo qué por hablante
+2. Resumen ejecutivo de puntos clave
+3. Acciones pendientes y decisiones tomadas
+4. Marca lo que requiere seguimiento
+Formato: limpio, secciones, listo para compartir."
+
+### Combo viral — video competencia → guion propio:
+1. Encontrar video viral del nicho
+2. Transcribir con Vibe Voice
+3. Prompt a Claude: analiza hook, estructura,
+   ritmo, triggers emocionales, CTA, por qué pegó
+4. Claude arma guion original con misma fórmula
+
+### Como producto para clientes:
+- Transcripción de juntas con resumen automático
+- Análisis de llamadas de ventas → insights y objeciones
+- Contenido en otro idioma → texto listo para traducir
+- Pipeline: Vibe Voice → Claude → Editor Pro Max → video
+- Combinar con /loop para transcripción automática de juntas diarias

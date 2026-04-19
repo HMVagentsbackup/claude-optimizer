@@ -1163,3 +1163,63 @@ npx skills.sh install claude-seo
 - Reporte /seo-report como entregable profesional
 - Mantenimiento SEO mensual con /loop
 - Combinar con Scrapling para análisis de competencia
+
+## TradingView MCP — Claude ve tus gráficas en tiempo real
+
+Claude lee datos reales del chart (no capturas de pantalla).
+Analiza, dibuja niveles, pone alertas y hace backtests.
+Open source: github.com/tradesdontlie/tradingview-mcp
+
+### Requisitos:
+- Claude Code instalado
+- TradingView Desktop (no versión web)
+- Node.js 18+
+- Git
+
+### Instalación (desktop — prompt para Claude):
+"Instala TradingView MCP de @Tradesdontlie.
+Repo: https://github.com/tradesdontlie/tradingview-mcp
+1. Verifica Node.js 18+ y Git
+2. Clona repo en ~/tradingview-mcp
+3. npm install
+4. Lee README para comando exacto del servidor
+5. Configura en ~/.claude/.mcp.json
+6. Dame comando para lanzar TradingView con debug port"
+
+### Paso crítico — siempre antes de usar:
+1. Cerrar TradingView completamente
+2. Relanzar con --remote-debugging-port=9222
+3. Abrir Claude Code en sesión nueva
+4. Verificar: "Corre tv_health_check" → cdp_connected: true
+
+### 6 casos de uso para clientes de trading:
+
+ANÁLISIS EN VIVO:
+"Analiza [símbolo] en [timeframe]. Dame tendencia,
+soportes/resistencias, estructura y conclusión en 3 renglones"
+
+DIBUJAR NIVELES:
+"Dibuja 3 soportes (verde) y 3 resistencias (rojo)
+en el chart actual con etiquetas de precio"
+
+ALERTAS EN WATCHLIST:
+"Ponme alertas en toda mi watchlist cuando toquen
+soporte o resistencia clave. Muéstrame lista antes"
+
+REPORTE DE MERCADO:
+"¿Qué pasó en mi watchlist en las últimas 12 horas?
+Dame cambio %, rango, volumen y símbolos en decisión"
+
+BACKTEST:
+"Backtesta: entrar cuando precio cruza EMA50 con RSI<40,
+salir cuando cruza EMA21 o RSI>70. Periodo: [fechas]"
+
+PINE SCRIPT:
+"Escribe indicador Pine Script v5 que [descripción].
+Compílalo, corrige errores y agrégalo al chart"
+
+### Como producto vendible:
+- Análisis técnico automatizado para traders
+- Reportes diarios de mercado con /loop daily
+- Agente de alertas 24/7 con Managed Agent
+- Backtesting de estrategias como servicio

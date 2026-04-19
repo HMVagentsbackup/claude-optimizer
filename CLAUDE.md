@@ -928,3 +928,71 @@ Problema complejo → Opus (solo con intención)
 - Arquitectura de sistema complejo → Opus
 - Reportes automáticos /loop → Haiku
 - Análisis profundo de datos → Sonnet/Opus
+
+## Guía definitiva — Claude Code bien usado
+
+### Regla fundamental:
+Claude Code es un agente con acceso a tu computadora.
+No es un chatbot. Le das instrucciones y las ejecuta.
+
+### Setup en ~/.zshrc (desktop):
+alias claude='claude --dangerously-skip-permissions'
+alias cc='claude'
+alias ccr='claude --resume'
+
+### Zonas de contexto — monitorear siempre:
+0-50% → trabajo efectivo, agente piensa bien
+50-70% → cuidado, empieza a olvidar
+70-85% → problemas en camino
+85%+   → auto-compact, empezar sesión nueva
+
+### Reglas de oro que salvan dinero:
+1. CLAUDE.md < 500 líneas, sin contradicciones
+2. 1 tarea = 1 sesión → /clear → sesión nueva
+3. MCPs por proyecto, NO globales
+4. Global solo: lo que usas en TODO (Exa, Chrome DevTools)
+
+### MCPs vs Skills:
+MCP viejo: ~5,700-11,400 tokens por MCP
+Skills nuevo: ~50 tokens (header) + carga bajo demanda
+→ Misma funcionalidad, 100x más eficiente
+→ Marketplace: skills.sh
+
+### Subagentes — 3x más rápido, 6x más barato:
+Sin subagentes: 3 tareas = 15 min + 300K tokens
+Con subagentes: 3 tareas = 5 min + 50K tokens
+Configurar en: .claude/agents/[nombre].md
+Modelo por subagente:
+- Opus → planes y arquitectura
+- Sonnet → escribir código
+- Haiku → buscar documentación
+
+### Git + Deploy — dejar de compartir localhost:
+git init → commits → push a GitHub (repo privado)
+Deploy: npx vercel (menos de 1 minuto)
+NUNCA secretos en el código → GitHub Secrets
+Git Worktree → dos Claudes en paralelo sin conflictos
+
+### El proceso que lo cambia todo (Superpowers):
+Brainstorm → Specification → Plan →
+Subagent Implementation → Code Review → Merge/PR
+Resultado real: 9 tareas completadas con 9% de contexto
+vs sin proceso: 1 tarea y ya vas en 85%
+
+### Kit mínimo esencial:
+- Exa MCP: búsqueda superior a la built-in
+- Context7 Skill: docs frescos de librerías
+- Chrome DevTools MCP: automatización del browser
+- Frontend Design Skill: diseño profesional
+- Skill Creator: crea tus propios skills
+- Superpowers: proceso completo de desarrollo
+
+### La ruta de 0 a avanzado:
+0. Entender que es agente, no chatbot
+1. Instalar + bypass + Whisper (voz)
+2. CLAUDE.md desde el día uno
+3. MCP → Skills → Subagentes
+4. Monitorear contexto siempre
+5. Deploy desde el primer proyecto
+6. Git como salvavidas
+7. Proceso: plan → decompose → implement → review

@@ -1698,3 +1698,48 @@ Pro (móvil completo): $200+ USD/primer año
 - Cobrar por app + mantenimiento mensual
 - Combinar con WhatsApp AgentKit para engagement
 - Combinar con Auto-CRM para gestión de usuarios
+
+## Cyber Neo — Auditoría de seguridad automática
+
+5 subagentes en paralelo. 11 dominios de seguridad.
+100% solo lectura — nunca modifica archivos.
+Reporte en Markdown en tu Desktop.
+Open source MIT: github.com/Hainrixz/cyber-neo
+
+### Instalación (desktop):
+git clone https://github.com/Hainrixz/cyber-neo.git ~/.claude/skills/cyber-neo
+
+O decirle a Claude:
+"Instala https://github.com/Hainrixz/cyber-neo
+Clónalo en ~/.claude/skills/cyber-neo"
+
+### Uso:
+Abrir Claude Code en la carpeta del proyecto → /cyber-neo
+Los 5 agentes trabajan en paralelo → reporte en Desktop
+
+### 11 dominios que escanea:
+1. Código (SAST) → errores de seguridad en código
+2. Autenticación → accesos y contraseñas
+3. Criptografía → cifrado de datos sensibles
+4. Secretos → 60+ patrones (API keys, tokens, passwords)
+5. Dependencias → librerías con vulnerabilidades conocidas
+6. Seguridad Web → cabeceras HTTP, CSRF, browser
+7. Supply Chain → paquetes de terceros
+8. CI/CD → GitHub Actions y pipelines
+9. Contenedores → Docker y Kubernetes
+10. Manejo de Errores → info sensible en errores
+11. Logging → datos privados en registros
+
+### Herramientas opcionales (mejoran resultados):
+Semgrep → SAST avanzado
+Trivy → vulnerabilidades en Docker
+Gitleaks → secretos en historial Git
+pip-audit → dependencias Python
+cargo-audit → dependencias Rust
+
+### Como producto vendible:
+- Auditoría de seguridad inicial para clientes
+- Reporte Markdown como entregable profesional
+- Correr antes de cada deploy con /loop
+- Combinar con G Stack /cso para seguridad completa
+- Precio sugerido: $300-1,000 USD por auditoría

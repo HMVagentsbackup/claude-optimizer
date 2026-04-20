@@ -2977,3 +2977,80 @@ al scroll, botones animados al hover."
 ### Publicar en Vercel:
 "Crea repositorio GitHub y sube todo el código."
 → vercel.com → Add New Project → seleccionar repo → Deploy
+
+## Stitch MCP — Diseño UI de Google gratis
+
+Genera interfaces completas con colores, tipografía y HTML.
+Gratis con cuenta de Google. Multi-pantalla (web/móvil/tablet).
+stitch.withgoogle.com
+
+### Setup:
+1. Cuenta en stitch.withgoogle.com → generar API Key
+2. npm install @google/stitch-sdk
+3. Configurar MCP → leer docs en stitch.withgoogle.com/docs/mcp/setup
+   (o decirle a Claude: "configura el MCP de Stitch con esta API key")
+
+### 8 herramientas del MCP:
+create_project, generate_screen_from_text,
+edit_screens, get_screen, generate_variants,
+list_projects, list_screens
+
+### Skills oficiales de Stitch:
+npx skills add google-labs-code/stitch-skills --list
+- stitch-design → diseño completo con sistema automático
+- stitch-loop → sitio multi-página desde un solo prompt
+- react:components → convierte pantallas a React
+- enhance-prompt → mejora prompts vagos
+
+---
+
+## Diseñador Web Definitivo — 4 herramientas combinadas
+
+### Las 4 piezas:
+1. UI/UX Pro Max GO → 67 estilos, 161 paletas, 57 fuentes
+2. NanoBanana MCP → genera mockups con Gemini
+3. Google Stitch MCP → diseño UI completo con HTML/CSS
+4. 21st Dev Magic → componentes premium React/Tailwind
+
+### Instalación (desktop):
+UI/UX Pro Max:
+npm install -g uipro-cli && uipro init --ai claude
+
+NanoBanana (.mcp.json):
+uvx nanobanana-mcp-server@latest + GEMINI_API_KEY
+
+Stitch MCP:
+npx @_davideast/stitch-mcp init
+
+21st Dev:
+npx @21st-dev/cli@latest install claude --api-key [KEY]
+API key en: 21st.dev → API keys
+
+### Flujo completo:
+1. Describe qué página necesitas
+2. NanoBanana/Stitch → mockup de referencia visual
+3. UI/UX Pro Max → paleta, tipografía y estilo por industria
+4. 21st Dev → componentes premium para el código
+5. Resultado: página profesional lista
+
+### Prompts:
+
+LANDING COMPLETA:
+"Crea landing para [startup]. Genera mockup con Stitch,
+usa UI/UX Pro Max para paleta y estilo, construye con
+componentes de 21st Dev Magic. Next.js + Tailwind CSS."
+
+DASHBOARD:
+"Genera mockup con NanoBanana de dashboard para [app].
+Replica el diseño con 21st Dev y UI/UX Pro Max para
+colores y tipografía profesionales."
+
+COMPONENTES:
+"Usa /ui para crear hero section con gradiente y CTA.
+Luego crea pricing con 3 planes. Responsive + mejores
+prácticas del skill de diseño."
+
+### Tips:
+- Siempre empezar con mockup de referencia
+- Shift+Tab → Plan Mode antes de diseñar
+- Decirle explícitamente qué herramienta usar para cada parte

@@ -2483,3 +2483,50 @@ Abrir Claude Code en carpeta del proyecto → /all-deploy
 - Preview para que el cliente apruebe antes de producción
 - Rollback instantáneo si algo falla en vivo
 - Sin depender de DevOps ni configuración manual
+
+## Opus 4.7 — Cuándo sí, cuándo no
+
+### Los 3 modelos:
+- Sonnet 4.6 → día a día, casi no gasta. DEFAULT.
+- Opus 4.6 → análisis profundo, código mediano. Plan respira.
+- Opus 4.7 → código largo-horizonte, agentes pesados, visión 3x. Come el doble.
+
+### Números de Opus 4.7:
+- Código 13% mejor que Opus 4.6 (70% vs 58% CursorBench)
+- Visión 3x mejor (98.5% vs 54.5% XBOW)
+- API: $5/M tokens entrada, $25/M tokens salida
+
+### Mapa de cuándo usar cada uno:
+Día a día → Sonnet 4.6
+Pensar en serio → Opus 4.6
+Algo gordo + plan $100/$200 → Opus 4.7
+Plan Pro $20 → NO usar Opus 4.7 (saldrá el cartelito)
+
+### 6 reglas de prompting oficial Anthropic:
+1. Sé claro y directo → "dashboard de ventas con filtro por mes"
+2. Dile el PORQUÉ → Claude generaliza la regla a casos nuevos
+3. Dale ejemplos → 2-3 ejemplos en etiquetas <ejemplo></ejemplo>
+4. Dile qué hacer, NO qué no hacer → instrucciones positivas
+5. Dale un rol → "Eres experto en Python para principiantes"
+6. Bájale el effort si es simple → Opus 4.7 usa xhigh por default
+
+### 4 prompts anti-desperdicio (en inglés — rinden mejor):
+
+RESPUESTAS CORTAS:
+"Provide concise, focused responses. Skip non-essential
+context, and keep examples minimal."
+
+CONFIRMAR ANTES DE ACCIONES RIESGOSAS:
+"Consider reversibility and potential impact. Take local
+reversible actions freely, but for hard-to-reverse actions
+or shared systems, ask the user before proceeding."
+
+NO SOBRE-INGENIERÍA:
+"Avoid over-engineering. Only make changes directly
+requested or clearly necessary. Don't add features,
+refactor, or improve beyond what was asked."
+
+INVESTIGAR ANTES DE RESPONDER:
+"Never speculate about code you have not opened.
+Read the file before answering. Investigate relevant
+files BEFORE answering questions about the codebase."

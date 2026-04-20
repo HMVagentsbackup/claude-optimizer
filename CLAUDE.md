@@ -3054,3 +3054,59 @@ prácticas del skill de diseño."
 - Siempre empezar con mockup de referencia
 - Shift+Tab → Plan Mode antes de diseñar
 - Decirle explícitamente qué herramienta usar para cada parte
+
+## Replica Diseños Web — Copia el estilo de cualquier web
+
+### Instalación:
+claude install-skill https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+
+### Prompt de replicación:
+"Esta es la landing page [URL]. Replica el layout y espaciado,
+tipografía, patrones de animación, y paleta de colores.
+Usa UI UX Pro Max y Tailwind CSS. Responsive completo.
+Que las plantillas se puedan aplicar a otras páginas.
+Si no tienes imágenes, usa NanoBanana para generarlas."
+
+### Qué replica:
+Layout y espaciado, tipografía, animaciones,
+colores y paleta, estructura de secciones
+
+### Tips:
+- Elegir páginas con secciones bien definidas
+- Primero replicar diseño, luego cambiar el copy
+- Shift+Tab → Plan Mode antes de ejecutar
+- Iterar: "hazlo más oscuro", "cambia la fuente"
+
+---
+
+## Clonador de Páginas — Un comando clona cualquier web
+
+Claude abre la página con Chrome real, analiza todo
+y construye la réplica en Next.js limpio.
+6,700 estrellas GitHub. Open source.
+github.com/JCodesMore/ai-website-cloner-template
+
+### Instalación (desktop):
+git clone https://github.com/JCodesMore/ai-website-cloner-template.git mi-clon
+cd mi-clon && npm install
+claude --chrome
+
+### Uso:
+/clone-website [URL]
+
+### 5 fases automáticas:
+1. Reconocimiento → capturas, colores, fuentes, estructura
+2. Fundamentos → Next.js + Tailwind + design tokens
+3. Spec → lista de componentes con CSS exactos
+4. Construcción paralela → múltiples agentes en paralelo
+5. Ensamblaje y QA → compara con original, ajusta
+
+### Para qué sirve:
+- Migrar página vieja a Next.js
+- Estudiar cómo está hecha una página
+- Extraer design system de competencia
+- Prototipar: cliente dice "quiero algo así" → clonas y adaptas
+
+### ⚠️ No copia contenido ni imágenes con copyright.
+Solo clona el diseño — colores, estructura, layout.
+Tú pones tu propio contenido después.

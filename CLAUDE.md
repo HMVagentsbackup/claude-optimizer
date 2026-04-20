@@ -2691,3 +2691,73 @@ Paso 2 — Buscar en lenguaje natural:
 Paso 3 — Claude instala lo que encuentre automáticamente.
 
 Directorio: skills.sh
+
+## Las 3 Herramientas de Claude Code
+
+Sistema para pasar de ideas sueltas a ejecución estructurada.
+
+### 1. Vibe Kanban:
+Tablero para coordinar agentes en paralelo, revisar diffs
+y ejecutar por tickets.
+npx vibe-kanban
+github.com/BloopAI/vibe-kanban
+
+### 2. Get Shit Done (GSD):
+Meta-prompting y spec-driven dev. Mantiene resultados
+consistentes cuando el contexto se degrada.
+npx get-shit-done-cc@latest
+github.com/gsd-build/get-shit-done
+
+### 3. Claude Code Templates:
+Catálogo de agentes, comandos, hooks y MCPs listos.
+Evita arrancar de cero en cada proyecto.
+npx claude-code-templates@latest
+github.com/davila7/claude-code-templates
+
+### Flujo recomendado:
+1. Templates → configura base de agentes y comandos
+2. GSD → traduce ideas a roadmap y fases ejecutables
+3. Vibe Kanban → opera ejecución diaria con tickets
+4. Iterar semanalmente con feedback real
+
+---
+
+## Awesome Design MD — 55 diseños famosos gratis
+
+Copia el DESIGN.md de Apple, Stripe, Notion, etc.
+y Claude diseña con ese estilo automáticamente.
+github.com/VoltAgent/awesome-design-md
+
+### Instalación:
+git clone https://github.com/VoltAgent/awesome-design-md.git
+
+### Uso:
+1. Elegir diseño en carpeta design-md/
+2. cp awesome-design-md/design-md/[empresa]/DESIGN.md ./
+3. Decirle a Claude qué construir
+
+### Prompts:
+
+LANDING ESTILO APPLE:
+"Lee DESIGN.md en la raíz. Crea landing para [producto].
+Mismos colores, tipografía y botones. Responsive con
+hero, features, pricing y footer."
+
+PRICING ESTILO STRIPE:
+"Tengo DESIGN.md de Stripe. Crea página de precios
+con 3 planes, tabla comparativa, toggle mensual/anual y CTA."
+
+REDISEÑAR COMPONENTE:
+"Lee DESIGN.md y el archivo [ruta]. Rediseña ese
+componente aplicando el sistema de diseño. Solo el
+diseño — no cambies la funcionalidad."
+
+### 55 diseños incluidos:
+Apple, Stripe, Notion, Figma, Linear, Vercel,
+Supabase, Claude, OpenAI, Cursor, Spotify,
+Slack, Webflow, MongoDB, Uber, SpaceX y más.
+
+### Tips:
+- Combinar diseños: colores de uno + tipografía de otro
+- Personalizar colores de marca después de aplicar
+- Ver preview.html antes de copiar el DESIGN.md

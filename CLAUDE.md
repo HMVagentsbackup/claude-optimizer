@@ -3507,3 +3507,79 @@ Skill Creator → construye herramientas que no existen
 - Systematic Debugging → debugging antes de entregar
 - Skill Creator → crear skills personalizados por cliente
 - Context Optimizer → sesiones largas sin perder el hilo
+
+## Crea Agentes con Claude Code — Flujo completo
+
+### El flujo de 6 pasos:
+1. claude (abrir Claude Code en tu proyecto)
+2. Shift+Tab → Plan Mode (diseña sin tocar nada)
+3. Describir el agente con detalle
+4. Claude investiga y entrega plan
+5. Revisar y ajustar el plan
+6. Shift+Tab → Auto Mode → Claude construye
+
+### Prompt de descripción de agente:
+"Quiero crear un agente que [tarea específica].
+El agente debe:
+1. [acción 1]
+2. [acción 2]
+3. [output esperado]
+Investiga mi proyecto y diseña plan completo."
+
+### Prompt de descubrimiento (si no sabes qué agente crear):
+"Hazme preguntas sobre mi día a día y tareas repetitivas.
+Sugiere 3 agentes que automaticen lo más tedioso.
+Para cada uno: qué haría, qué herramientas, cuánto tiempo ahorraría."
+
+### Programar agentes con /loop:
+/loop 2h revisa PRs abiertos y deja comentarios
+/loop daily organiza bandeja de entrada por prioridad
+/loop 5m verifica que mi sitio esté online
+
+### MCPs que Claude detecta e instala automáticamente:
+Gmail, GitHub, Browser, Google Calendar, bases de datos
+
+---
+
+## Managed Agents — Agente 24/7 por $0.70/hora
+
+Agente en la nube de Anthropic. No necesitas compu encendida.
+Solo pagas cuando trabaja — tiempo esperando: $0.
+platform.claude.com → Agent Quickstart
+
+### Qué puede tocar (vive en la nube):
+✅ Gmail, Google Drive, Notion, WhatsApp Business
+✅ Slack, Telegram, Google Calendar, Calendly
+✅ CRMs, ecommerce, APIs en internet
+
+### Qué NO puede tocar:
+❌ Tu computadora local
+❌ Archivos solo en laptop
+❌ WhatsApp personal del celular
+❌ Hardware: impresoras, cámaras
+
+### Prompts para Agent Quickstart:
+
+WHATSAPP CLIENTES:
+"Quiero agente que conteste WhatsApp 24h.
+Negocio: [descripción]. Debe: saludar con mi tono,
+contestar precios/horarios, agendar en Google Calendar,
+pasarme el chat si no sabe, mandarme resumen diario por Gmail.
+Conectar: WhatsApp Business, Google Calendar, Gmail."
+
+REPORTE SEMANAL:
+"Agente que cada lunes 8am arme reporte semanal.
+Revisa Gmail (resumen semana), Google Sheet de ventas
+(totales + comparación), Google Calendar (juntas semana nueva).
+Arma PDF y envíalo por correo con 3 pendientes urgentes.
+Conectar: Gmail, Google Drive, Google Calendar."
+
+### Servicios enchufables con MCP:
+Gmail, WhatsApp Business, Google Drive, Notion,
+Slack, Telegram, Google Calendar, GitHub, Linear
+
+### Tips:
+- Empezar con Sonnet → cambiar a Opus si necesitas más razonamiento
+- Poner límite mensual en Billing para dormir tranquilo
+- Pedir autorización antes de acciones importantes
+- Iterar con Claude hasta que el agente quede bien

@@ -2384,3 +2384,60 @@ Si algo falla, arréglalo y vuelve a probar antes del PR."
 4. Effort level → moverlo por tarea
 5. Focus mode → solo cuando confíes en el modelo
 6. /fewer-permission-prompts → una vez por semana
+
+## Claude Design — Del chat a producción
+
+Entorno visual de Anthropic Labs. Sin instalar nada.
+Presentaciones, páginas web y apps clickeables en un chat.
+Incluido en Pro, Max, Team y Enterprise.
+Entrar: claude.ai/design
+
+### Qué puede hacer:
+1. PRESENTACIONES → Excel/PPTX/DOCX a slides con narrativa
+2. PÁGINAS WEB → clona estilos, inspira desde referencias
+3. APPS → prototipos clickeables con estados reales
+
+### 4 formas de ajustar sin re-promptear:
+- Comentarios inline (tipo Figma)
+- Edición directa de texto en el lienzo
+- Sliders custom que Claude crea para tu diseño
+- Design system automático desde tu codebase
+
+### Exports disponibles:
+PPTX, PDF, HTML standalone, Canva, URL compartible
+
+### Handoff a Claude Code:
+"Pásalo a Claude Code" → Claude empaqueta bundle completo.
+Incluye: árbol de componentes, design tokens,
+breakpoints, accesibilidad, handoff.md con el "por qué"
+
+### Prompts para clientes:
+
+PRESENTACIÓN DE RESULTADOS:
+"Arma presentación de 6 slides del Q1.
+Datos: [ventas, canal, producto estrella, clientes, meta].
+Estilo: clean, paleta oscura, acento turquesa."
+
+LANDING PAGE RÁPIDA:
+"Landing de una scroll para [taller/servicio].
+Secciones: hero, qué aprenderás, para quién,
+testimonios, FAQ, CTA con countdown."
+
+PROTOTIPO DE APP:
+"Onboarding clickeable de [nombre app].
+4 pantallas: [descripción]. Estilo: [referencias]."
+
+HANDOFF A PRODUCCIÓN:
+"Empaqueta para Claude Code:
+- Next.js 16 + React 19 + TypeScript + Tailwind v4 + shadcn/ui
+- Árbol de componentes con rutas
+- Tokens como CSS custom properties
+- Notas de accesibilidad ARIA
+- handoff.md con design intent"
+
+### Como producto para clientes:
+- Prototipos en horas en vez de semanas
+- Presentaciones ejecutivas desde Excel bruto
+- Validar apps antes de gastar en desarrollo
+- Combinar con Claude Web Builder para código final
+- Combinar con Claude SEO para optimización

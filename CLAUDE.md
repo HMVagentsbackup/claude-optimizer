@@ -4075,3 +4075,95 @@ prioriza por impacto, métricas para saber si voy bien."
 - No siempre necesitas los 4 (para preguntas rápidas no)
 - Itera: "hazlo más corto", "cambia el tono", "más detalle en X"
 - Guarda tus mejores prompts para reutilizar
+
+## 3 Trucos Para Que Tu Cuenta Rinda Más
+
+### 1. Crea Skills (atajos personalizados):
+En vez de que Claude busque en todo el proyecto,
+le das la habilidad directa → va sin buscar.
+/skill → crear skill con Skill Creator
+
+Ejemplo de skill para deploy:
+"Crea skill 'deploy' que haga:
+1. npm test
+2. Si pasan → npm run build
+3. vercel --prod
+4. Confirmar que deploy fue exitoso"
+
+### 2. Limpia conversaciones seguido:
+Más de 10-15 mensajes = empezar de nuevo.
+/clear → limpiar conversación
+/compact → comprimir sin perder nada
+Regla: al terminar cada tarea → /clear
+
+### 3. Organiza archivos como mapa:
+Proyecto desordenado = Claude busca en todas partes.
+src/, docs/, tests/ con nombres descriptivos.
+CLAUDE.md en raíz = mapa para Claude.
+
+Plantilla CLAUDE.md mínima:
+# Mi Proyecto
+## Estructura
+- src/ → código principal
+- src/components/ → componentes UI
+- src/lib/ → funciones y utilidades
+- docs/ → documentación
+- tests/ → pruebas
+## Reglas
+- Usa TypeScript siempre
+
+Prompt para que Claude organice por ti:
+"Organiza los archivos: crea carpetas lógicas,
+mueve cada archivo donde corresponde, renombra
+con nombres descriptivos, crea CLAUDE.md con estructura."
+
+---
+
+## Crea Tus Propios Skills — Guía completa
+
+Un skill = archivo SKILL.md con metadata YAML + instrucciones.
+
+### Estructura mínima:
+---
+name: mi-skill
+description: Genera resúmenes de archivos de código
+version: 1.0.0
+---
+# Instrucciones
+Cuando el usuario pida resumen:
+1. Lee el archivo indicado
+2. Identifica la función principal
+3. Resume en 2-3 oraciones
+
+### Carpeta del skill:
+mi-skill/
+├── SKILL.md (obligatorio)
+├── REFERENCE.md (opcional — contexto extra)
+└── scripts/ (opcional)
+
+### Dónde colocar:
+Global: ~/.claude/skills/mi-skill/
+Por proyecto: .claude/skills/mi-skill/
+
+### 3 niveles de carga progresiva:
+1. Metadata → Claude lee nombre y descripción
+2. Instrucciones → carga SKILL.md completo si es relevante
+3. Recursos → lee REFERENCE.md solo si necesita más contexto
+
+### Buenas prácticas:
+- SKILL.md bajo 500 líneas → si crece, dividir
+- Descripción en tercera persona: "Genera tests..." no "Genero..."
+- Nombres en gerundio: code-reviewing, api-documenting
+- Instrucciones concretas, no vagas
+- Prueba en Opus, Sonnet y Haiku
+
+### Dónde funcionan:
+Claude Code → .claude/skills/
+API → container.skills en la request
+claude.ai → subir como proyecto
+Agent SDK → integrar programáticamente
+
+### Documentación oficial:
+docs.anthropic.com/en/docs/claude-code/skills
+docs.anthropic.com/en/docs/claude-code/skills-quickstart
+docs.anthropic.com/en/docs/claude-code/skills-best-practices

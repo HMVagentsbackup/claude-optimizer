@@ -3208,3 +3208,44 @@ Canvas Design   → pósters y gráficos sociales
 Web Artifacts   → apps sin código
 Theme Factory   → colores + tipografía
 Algorithmic Art → arte generativo único
+
+## 5 Skills de Marketing — Tu departamento completo
+
+### 1. Marketing Skills (17K+ estrellas):
+34 especialistas: copy, emails, anuncios, precios, retención.
+npx skills add coreyhaines31/marketingskills
+github.com/coreyhaines31/marketingskills
+
+### 2. Claude SEO:
+19 sub-habilidades. Auditoría completa + optimización para IA.
+/seo audit <tu-url> → análisis automático
+git clone https://github.com/AgriciDaniel/claude-seo.git
+
+### 3. Brand Guidelines (oficial Anthropic, 105K+ estrellas):
+Carga tu marca una vez. Claude la aplica en todo automáticamente.
+Colores, tipografía, estilo → consistente en presentaciones, web, docs.
+claude install-skill https://github.com/anthropics/skills/tree/main/skills/brand-guidelines
+
+### 4. Editor Pro Max (41K+ estrellas):
+Videos con palabras. 25 componentes + 10 plantillas.
+TikTok, YouTube, Instagram. Subtítulos con Whisper AI.
+git clone https://github.com/Hainrixz/editor-pro-max.git
+
+### 5. NotebookLM Skill:
+Claude consulta TUS documentos. Cero alucinaciones.
+Soporta videos, PDFs, documentos de Google.
+mkdir -p ~/.claude/skills && git clone https://github.com/PleasePrompto/notebooklm-skill ~/.claude/skills/notebooklm
+
+### Cómo trabajan juntas:
+Marketing Skills → planea campañas y escribe copy
+Claude SEO → optimiza para Google y IA (ChatGPT, Perplexity)
+Brand Guidelines → todo se ve consistente con tu marca
+Editor Pro Max → produce el video sin tocar editor
+NotebookLM → respuestas basadas en tus documentos reales
+
+### Para clientes:
+- Marketing Skills → estrategia de contenido completa
+- Brand Guidelines → identidad visual consistente
+- Claude SEO → auditoría como entregable ($500-2,000 valor)
+- Editor Pro Max → videos de marketing sin costo de producción
+- NotebookLM → base de conocimiento del cliente sin alucinaciones

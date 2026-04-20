@@ -3110,3 +3110,61 @@ claude --chrome
 ### ⚠️ No copia contenido ni imágenes con copyright.
 Solo clona el diseño — colores, estructura, layout.
 Tú pones tu propio contenido después.
+
+## Protege Tu App — 3 configuraciones esenciales
+
+### 1. ROW-LEVEL SECURITY (RLS) — Supabase/PostgreSQL:
+Sin RLS: cualquier usuario puede ver datos de otros.
+Con RLS: base de datos filtra automáticamente por usuario.
+
+Prompt para Claude:
+"Tengo Supabase con tablas: [lista tus tablas].
+Configura RLS para que cada usuario solo vea/edite/borre
+sus propios datos. Usa auth.uid(), políticas separadas
+para SELECT/INSERT/UPDATE/DELETE, índices en user_id.
+Dame SQL completo para el SQL Editor de Supabase."
+
+Verificar: Security Advisor en Supabase Dashboard
+Probar: dos usuarios distintos — Usuario B no debe ver datos de A
+
+### 2. CORS — Guardia de seguridad de tu API:
+Sin CORS: cualquier página puede hacer requests a tu API.
+Con CORS: solo tu dominio exacto puede hablar con la API.
+
+Prompt para Claude:
+"Mi frontend está en https://[dominio].com y mi API en
+https://api.[dominio].com. Configura CORS para:
+- SOLO aceptar requests de mi dominio exacto (nunca *)
+- Métodos: GET, POST, PUT, DELETE
+- Headers: Authorization y Content-Type
+- Soporte credentials: true
+- Manejar preflight OPTIONS
+Mi stack es: [Next.js/Express/otro]"
+
+Errores NUNCA cometer:
+❌ Access-Control-Allow-Origin: *
+❌ Reflejar el Origin del request
+❌ Mezclar * con credentials
+❌ Permitir HTTP además de HTTPS
+
+### 3. SECURITY HEADERS — Letreros de seguridad:
+Los 6 headers esenciales:
+X-Frame-Options: SAMEORIGIN (anti-clickjacking)
+Content-Security-Policy (anti-XSS)
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), camera=()
+
+Prompt para Claude:
+"Agrega todos los Security Headers de producción a mi
+app [Next.js/Express]. Dominio: https://[dominio].com
+Si uso Google Analytics/Stripe, dime qué ajustar en CSP."
+
+Verificar: securityheaders.com → debe dar A+
+
+### Para agentes de clientes:
+- Correr estos 3 antes de entregar cualquier agente/app
+- Combinar con Cyber Neo para auditoría completa
+- Verificar con securityheaders.com como entregable
+- Security Advisor de Supabase como check automático

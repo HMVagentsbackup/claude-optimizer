@@ -2530,3 +2530,63 @@ INVESTIGAR ANTES DE RESPONDER:
 "Never speculate about code you have not opened.
 Read the file before answering. Investigate relevant
 files BEFORE answering questions about the codebase."
+
+## Platica, Luego Construye — El workflow correcto
+
+### La regla de oro:
+No es el modelo, es el prompt.
+Plática = explorar. Construcción = ejecutar. NUNCA juntos.
+
+### Las 3 prácticas en orden:
+
+1. APP PRIMERO (si eres nuevo):
+   - Usa claude.ai antes de la terminal
+   - Pásate a terminal cuando necesites scripts, hooks,
+     /loop, subagentes o MCPs avanzados
+
+2. PLATICA PRIMERO — folder separado:
+   mkdir ~/Desktop/platica && cd ~/Desktop/platica && claude
+   /model haiku  (Haiku para pelotear ideas, casi no gasta)
+   git clone https://github.com/Hainrixz/the-architect.git
+
+   Prompt para arrancar:
+   "Hola Arquitecto. Quiero construir [idea en 2-3 frases].
+   Mi público: [para quién]. Intención: [por qué].
+   Nivel técnico: [principiante/intermedio/experto].
+   Hazme las preguntas necesarias."
+
+   Prompt para exportar blueprint:
+   "Genera blueprint.md con las 16 secciones listo para
+   que Claude Code construya sin preguntarme nada."
+
+3. CONSTRUYE EN SESIÓN LIMPIA — folder nuevo:
+   mkdir ~/Desktop/mi-proyecto
+   cp ~/Desktop/platica/blueprint.md ~/Desktop/mi-proyecto/
+   cd ~/Desktop/mi-proyecto && claude --model opus
+
+   Prompt de construcción:
+   "Lee blueprint.md completo. Constrúyelo paso a paso
+   siguiendo Build Order. No brinques pasos, no preguntes
+   lo que ya está en el blueprint, no añadas features extras.
+   Si hay decisión técnica no cubierta, pregúntame."
+
+### Por qué funciona (nivel experto):
+- Contaminación de contexto: el peloteo contamina la construcción
+- Modelo correcto por fase: Haiku/Sonnet para explorar, Opus para construir
+- Plan Mode NO resuelve esto — es complementario
+- Blueprint exportado = determinístico, compartible, reutilizable
+
+### Las 4 fases de El Arquitecto:
+01 Discovery → clasifica en 6 archetypes
+02 Deep Dive → preguntas específicas por archetype
+03 Architecture → tech stack propuesto y confirmado
+04 Generate → blueprint.md de 16 secciones
+
+### Los 6 archetypes:
+SaaS App, Marketing Site, Mobile App,
+API/Backend, Internal Tool, Content Platform
+
+### Lo que NO debes hacer:
+❌ Construir en el folder de plática
+❌ Pedir que mejore el plan a media construcción
+❌ Meter features extra antes de terminar el blueprint

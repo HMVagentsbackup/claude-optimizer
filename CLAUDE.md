@@ -4237,3 +4237,60 @@ Max 5x → Max 20x: cuando llegues al límite del de $100 TODOS los días
   Sonnet → día a día (default)
   Opus → tareas pesadas y complejas
 - Dominar el plan actual antes de subir
+
+## 4 Trucos Básicos de Claude Code
+
+### 1. Ultra Think + Plan Mode:
+Shift+Tab → Plan Mode (Claude investiga y planea primero)
+ultrathink → pensamiento profundo antes de actuar
+
+Prompt combo:
+"ultrathink — Analiza mi proyecto completo y crea
+plan detallado para [tarea]. Investiga estructura actual,
+identifica archivos necesarios, dame plan paso a paso
+antes de escribir cualquier código."
+
+Cuándo usar: apps completas, features complejas,
+cambios que tocan múltiples archivos.
+
+### 2. Sub-agentes — divide y vencerás:
+Claude crea trabajadores separados que trabajan en paralelo.
+Hasta 4x más rápido. Menos errores por contexto separado.
+
+Prompt:
+"Usa sub-agentes para dividir el trabajo. Lanza agentes
+en paralelo para cada parte independiente: uno para
+frontend, otro para backend, otro para tests."
+
+Cuándo usar: tareas grandes con partes independientes.
+No usar para cambios pequeños (un typo, un texto).
+
+### 3. Comando /init — dale contexto a Claude:
+Crea CLAUDE.md automáticamente con estructura del proyecto.
+/init (dentro de Claude Code en tu proyecto)
+
+Para proyectos existentes: correr /init para que Claude
+analice todo el código y genere el contexto.
+Para proyectos nuevos: correr después del scaffold inicial.
+
+### 4. Personaliza tu CLAUDE.md:
+
+REGLA DE DOBLE VERIFICACIÓN:
+## Reglas de calidad
+- SIEMPRE verifica tu trabajo antes de terminar.
+  Revisa que compila, no hay errores de tipos, lógica correcta.
+- Investiga el código existente antes de implementar.
+  No asumas — lee el código primero.
+- NO implementes nada a menos que estés 100% seguro.
+
+REGLA DE MEMORIA ENTRE SESIONES:
+## Sistema de memoria
+- Antes de cerrar sesión, guarda resumen en PROGRESS.md:
+  qué hiciste, qué falta, decisiones importantes.
+- Al iniciar nueva sesión, lee PROGRESS.md primero.
+- Organizar en: Completado, En progreso, Pendiente, Decisiones.
+- Actualizar cada vez que completes un bloque significativo.
+
+### El combo completo:
+/init → CLAUDE.md → ultrathink + Plan Mode → sub-agentes
+= Claude Code al máximo rendimiento

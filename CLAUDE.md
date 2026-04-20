@@ -3394,3 +3394,73 @@ Plan completo con plataformas, estructura y KPIs."
 - Gestión mensual con /ads audit semanal
 - Reportes con Health Score como entregable
 - Combinar con /loop weekly para monitoreo automático
+
+## Claude Copywriter — 24 patrones anti-IA
+
+Detecta y elimina los patrones que delatan texto de IA.
+Dos pasadas de revisión. Basado en Wikipedia "Signs of AI writing."
+github.com/blader/humanizer
+
+### Instalación (desktop):
+mkdir -p ~/.claude/skills
+git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer
+
+### Los 24 patrones en 5 categorías:
+CONTENIDO: "revolucionario", "sin precedentes", frases genéricas
+LENGUAJE: "panorama", "catalizador", "sirve como", "funciona como"
+ESTILO: guiones largos, negritas innecesarias, emojis decorativos
+COMUNICACIÓN: "Espero que esto te sea útil", tono excesivamente amable
+RELLENO: "con el fin de", "podría potencialmente", conclusiones vagas
+
+### Proceso de 2 pasadas:
+1ª → elimina patrones obvios
+2ª → audita lo que sobrevivió la primera limpieza
+
+### Agentes copywriter:
+
+EMAIL MARKETING:
+"/humanizer — Crea secuencia de 3 emails para [producto].
+Email 1: presentación. Email 2: valor/tip. Email 3: CTA suave.
+Max 150 palabras. Tono conversacional como colega.
+Pasa cada email por /humanizer antes de entregar."
+
+LANDING PAGE:
+"/humanizer — Copy completo para landing de [producto]:
+Hero, Problema, Solución, Beneficios con números, Social proof, CTA.
+Sin hipérboles. Pasa cada sección por /humanizer."
+
+REDES SOCIALES:
+"5 posts para [red] sobre [tema].
+LinkedIn: profesional pero cercano sin buzzwords.
+Twitter: directo con opinión, max 280 chars.
+Pasa cada post por /humanizer."
+
+---
+
+## Skill Vault — Organiza y protege tus skills
+
+Bóveda de habilidades con análisis de seguridad de 13 puntos.
+No es un skill — es un agente completo.
+github.com/Hainrixz/skill-vault
+
+### Instalación (desktop):
+git clone https://github.com/Hainrixz/skill-vault.git && cd skill-vault && claude
+
+### 7 comandos:
+/vault-add       → agregar skill (link o código)
+/vault-search    → buscar por nombre
+/vault-recommend → recomendar según lo que estás construyendo
+/vault-discover  → buscar skills nuevos en internet
+/vault-list      → todos tus skills organizados
+/vault-stats     → cuántos tienes y cuáles usas más
+/vault-remove    → borrar skill
+
+### Calificaciones de seguridad:
+SAFE      → úsalo con confianza
+CAUTION   → revisa antes de usar
+DANGEROUS → no lo uses
+
+### 10 categorías de organización:
+automation, code-quality, design-ui, devops-deploy,
+documentation, organization, productivity, research,
+testing, web-development

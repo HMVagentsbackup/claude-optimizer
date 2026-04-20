@@ -2761,3 +2761,81 @@ Slack, Webflow, MongoDB, Uber, SpaceX y más.
 - Combinar diseños: colores de uno + tipografía de otro
 - Personalizar colores de marca después de aplicar
 - Ver preview.html antes de copiar el DESIGN.md
+
+## /schedule — Agentes en la nube 24/7
+
+A diferencia de /loop (corre en tu máquina),
+/schedule corre en servidores de Anthropic.
+Tu laptop puede estar apagada.
+
+### Sintaxis (lenguaje natural):
+/schedule [frecuencia] + [tarea] + [integraciones]
+
+### Ejemplos reales:
+
+DOCS AUTOMÁTICAS (ejemplo oficial Anthropic):
+"/schedule a daily job that looks at all PRs shipped
+since yesterday and update our docs based on the changes.
+Use Slack MCP to message #docs-update with the changes"
+
+ARREGLAR CI AUTOMÁTICAMENTE:
+"/schedule every 2 hours, check CI on main branch.
+If any check failed, diagnose, create fix and open PR"
+
+REPORTE DIARIO:
+"/schedule daily at 7am, summarize GitHub issues
+opened yesterday and send to my email via Gmail MCP"
+
+MONITOREO WEB:
+"/schedule every 6 hours, check if [sitio] responds
+correctly and load time under 3s. Alert on Slack if off"
+
+COMPETENCIA SEMANAL:
+"/schedule every Monday 8am, visit pricing pages of
+[competidor1] and [competidor2], compare with precios.csv.
+If any dropped 10%+, send Slack message to #alerts"
+
+### /loop vs /schedule:
+/loop  → tu máquina, necesita estar encendida, tareas puntuales
+/schedule → nube Anthropic, laptop apagada, recurrente 24/7
+
+### Combinar con skills:
+skill SEO + /schedule → auditoría semanal automática
+skill Ads + /schedule → monitoreo campañas cada 6h
+skill Copywriter + /schedule → revisión diaria de contenido
+
+---
+
+## Claude + Codex Hack — $40 hace lo de $100
+
+Claude construye. Codex arregla. Los dos en la misma terminal.
+$20 Claude + $20 ChatGPT = lo que el plan de $100 da.
+
+### Instalación (desktop):
+/plugin marketplace add openai/codex-plugin-cc
+/plugin install codex@openai-codex
+/reload-plugins
+/codex:setup
+
+### 6 comandos:
+/codex:review           → revisión de código (solo lee)
+/codex:adversarial-review → revisión agresiva de seguridad
+/codex:rescue           → arregla errores (el más importante)
+/codex:status           → qué está haciendo Codex
+/codex:result           → qué hizo y qué cambió
+/codex:cancel           → detener tarea en curso
+
+### Flujo del día:
+1. Claude construye la estructura y código principal
+2. Salen errores → /codex:rescue (gasta tokens de ChatGPT)
+3. Antes de entregar → /codex:review
+4. Trabajo en paralelo → /codex:rescue --background
+
+### Por qué ahorra dinero:
+Sin hack: Claude construye Y arregla errores → plan se acaba rápido
+Con hack: Claude construye, Codex arregla → tokens de Claude duran el doble
+
+### Para clientes:
+- Codex revisa código antes de entregar cada agente
+- /codex:adversarial-review como parte del proceso de seguridad
+- Combinar con Cyber Neo para auditoría completa

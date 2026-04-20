@@ -2906,3 +2906,74 @@ Directo, Ritmo, Confianza, Autenticidad, Densidad, Alma
 - Emails y propuestas que suenan a persona real
 - Combinar con Viral Script Combo para contenido en redes
 - Combinar con Open Carrusel para carruseles auténticos
+
+## Claude Diseñador Web Perfecto — 4 herramientas combinadas
+
+### Las 4 piezas:
+1. Frontend Design Skill → reglas estéticas de diseño
+2. Magic UI MCP → componentes animados (marquee, blur-fade, bento)
+3. shadcn/ui MCP → componentes accesibles (botones, forms, cards)
+4. Playwright CLI → Claude ve su propio trabajo en navegador real
+
+### Instalación (desktop):
+Frontend Design:
+claude plugin add anthropics/claude-code/plugins/frontend-design
+
+Magic UI MCP:
+npx @magicuidesign/cli@latest install claude
+
+shadcn/ui MCP:
+pnpm dlx shadcn@latest mcp init --client claude
+
+Playwright CLI:
+npm install -g @anthropic-ai/claude-code-playwright && npx playwright install chromium
+
+### Prompts:
+
+LANDING COMPLETA:
+"Diseña landing moderna para [startup/negocio].
+Usa Magic UI para animaciones y shadcn para formularios.
+Cuando termines, abre con Playwright y verifica.
+Si algo no se ve bien, corrígelo."
+
+MEJORAR DISEÑO EXISTENTE:
+"Abre http://localhost:3000 con Playwright,
+revisa diseño actual y mejora sección hero
+con componentes animados de Magic UI. Verifica resultado."
+
+### Tips:
+- Shift+Tab → Plan Mode antes de diseñar
+- Dile que use Playwright para 2-3 rondas de revisión
+- "Magic UI para animaciones, shadcn para formularios"
+
+---
+
+## Claude Animador Web — 3 skills para animaciones reales
+
+### Las 3 habilidades:
+1. Frontend Design → tipografía, colores, estructura
+2. UI UX Pro Max → 67 estilos, 161 paletas, 57 fuentes
+3. Emil Kowalski Skill → transiciones, timing, movimiento
+
+### Instalación (desktop):
+claude install-skill https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design/skills/frontend-design
+npx skills add nextlevelbuilder/ui-ux-pro-max-skill
+npx skills add emilkowalski/skill
+
+Verificar: /skills dentro de Claude Code
+
+### Qué puede animar automáticamente:
+- Botones con hover y click
+- Transiciones de página fluidas
+- Apariciones suaves al scroll
+- Menús, tooltips, cards con hover
+
+### Prompt de landing animada:
+"Crea landing para [startup]. Hero con animación de entrada,
+3 features en columnas, testimonios y CTA final.
+Colores oscuros con acentos en azul. Secciones aparecen
+al scroll, botones animados al hover."
+
+### Publicar en Vercel:
+"Crea repositorio GitHub y sube todo el código."
+→ vercel.com → Add New Project → seleccionar repo → Deploy

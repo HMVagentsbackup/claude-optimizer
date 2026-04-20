@@ -3249,3 +3249,67 @@ NotebookLM → respuestas basadas en tus documentos reales
 - Claude SEO → auditoría como entregable ($500-2,000 valor)
 - Editor Pro Max → videos de marketing sin costo de producción
 - NotebookLM → base de conocimiento del cliente sin alucinaciones
+
+## 5 Skills Para Crear Contenido
+
+### Banana Cloud — Imágenes con IA:
+git clone https://github.com/AgriciDaniel/banana-claude.git && cd banana-claude
+Describe qué imagen necesitas → Claude la genera al instante
+
+### NotebookLM Skill — Investigación sin alucinaciones:
+pip install notebooklm-py
+Le das artículos, PDFs, videos → resumen estructurado
+Respuestas basadas SOLO en tus documentos
+
+### Editor Pro Max — Videos sin editor:
+(ya documentado en sección anterior)
+
+### Stitch MCP — Diseño web:
+(ya documentado en sección anterior)
+
+### Humanízalo — Texto que suena humano:
+(ya documentado en sección anterior)
+
+---
+
+## 5 Skills de Productividad — Tu equipo de oficina
+
+### 1. Excel MCP (3.6K estrellas):
+Lee y modifica Excel sin tener Microsoft Excel instalado.
+Reportes, gráficas, tablas dinámicas automáticos.
+uvx excel-mcp-server stdio
+github.com/haris-musa/excel-mcp-server
+
+### 2. Obsidian Skills (18K estrellas — creador de Obsidian):
+Claude entra a tu bóveda, organiza y conecta notas.
+Soporta Markdown, Bases, JSON Canvas, CLI de Obsidian.
+npx skills add git@github.com:kepano/obsidian-skills.git
+
+### 3. Context7 (51K estrellas):
+Documentación actualizada de 10,000+ librerías.
+Elimina respuestas inventadas — fuentes oficiales siempre.
+npx ctx7 setup --claude
+
+### 4. Tavily — Buscador de internet en tiempo real:
+1,000 búsquedas/mes gratis. Lee páginas web completas.
+claude mcp add --transport http tavily https://mcp.tavily.com/mcp
+API key en: tavily.com
+
+### 5. Task Master (26K estrellas):
+Convierte cualquier idea en plan de tareas estructurado.
+Dependencias, criterios de éxito y prioridades por tarea.
+claude mcp add taskmaster-ai -- npx -y task-master-ai
+
+### Cómo trabajan juntas:
+Task Master → planea qué hacer y en qué orden
+Context7 → documentación técnica siempre actualizada
+Tavily → busca en internet cuando no está en docs
+Obsidian Skills → organiza y da contexto de tus notas
+Excel MCP → maneja todos los números y reportes
+
+### Para agentes de clientes:
+- Task Master → plan estructurado antes de construir agente
+- Context7 → código siempre con documentación actual
+- Tavily → agente que busca información en tiempo real
+- Excel MCP → agente que genera reportes automáticos
+- Obsidian Skills → base de conocimiento del cliente

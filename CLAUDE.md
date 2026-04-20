@@ -2641,3 +2641,53 @@ Luego abre Slack y manda al canal #reportes."
 - Migración de datos entre sistemas
 - Combinar con /loop para tareas recurrentes
 ⚠️ Empieza con tareas simples para familiarizarte
+
+## Skills Marketplace — 978+ skills disponibles
+
+### Agencia Digital Completa (antigravity-awesome-skills):
+978+ skills en 9 categorías. Instalación por proyecto.
+github.com/sickn33/antigravity-awesome-skills
+
+Instalación por herramienta:
+Claude Code: npx antigravity-awesome-skills --claude
+Cursor:      npx antigravity-awesome-skills --cursor
+Gemini CLI:  npx antigravity-awesome-skills --gemini
+
+Activar skill: @nombre-skill [prompt]
+Ejemplos:
+@api-design diseña la API para mi app de pedidos
+@security-audit revisa este endpoint por vulnerabilidades
+@pricing-strategy ayúdame a definir precios para mi SaaS
+@test-generation genera tests para este módulo
+
+9 categorías:
+- Arquitectura: sistemas, patrones, microservicios
+- Negocio: pricing, monetización, go-to-market
+- Data & IA: pipelines, ML, RAG
+- Desarrollo: frontend, backend, debugging
+- Infraestructura: deploy, CI/CD, Docker, cloud
+- Seguridad: auditorías, OWASP, pentesting
+- Testing: unit, integration, e2e, TDD
+- Workflow: git, code review, automatización
+- General: documentación, productividad
+
+Tip: instalar solo 2-3 categorías relevantes por proyecto
+
+---
+
+### Vercel Skills (skills.sh):
+Directorio abierto de skills para Claude Code.
+Instalar el buscador primero, luego hablarle en español.
+
+Paso 1 — Instalar find-skills:
+npx skills add https://github.com/vercel-labs/skills --skill find-skills
+
+Paso 2 — Buscar en lenguaje natural:
+"busca skills de frontend"
+"encuentra skills para testing"
+"qué skills hay para bases de datos?"
+"muéstrame skills de deploy en Vercel"
+
+Paso 3 — Claude instala lo que encuentre automáticamente.
+
+Directorio: skills.sh

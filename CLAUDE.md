@@ -3464,3 +3464,46 @@ DANGEROUS → no lo uses
 automation, code-quality, design-ui, devops-deploy,
 documentation, organization, productivity, research,
 testing, web-development
+
+## 5 Skills Equipo Dev — Tu equipo completo
+
+### Instalación de las 5 de un jalón (desktop):
+claude install-skill https://github.com/obra/superpowers && claude install-skill https://github.com/ChrisWiles/claude-code-showcase/tree/main/.claude/skills/systematic-debugging && claude install-skill https://github.com/muratcankoylan/agent-skills-for-context-engineering && claude install-skill https://github.com/ComposioHQ/awesome-claude-skills/blob/master/content-research-writer/SKILL.md && claude install-skill https://github.com/anthropics/skills/tree/main/skills/skill-creator
+
+### 1. Super Power (122K estrellas) — El Arquitecto:
+Planea, delega a sub-agentes, revisa y testea solo.
+Trabaja en paralelo. No improvisa — planea antes de construir.
+claude install-skill https://github.com/obra/superpowers
+
+### 2. Systematic Debugging — El Doctor:
+Encuentra causa raíz, no solo tapa síntomas.
+Investiga cadena completa de fallos. Previene recurrencia.
+claude install-skill https://github.com/ChrisWiles/claude-code-showcase/tree/main/.claude/skills/systematic-debugging
+
+### 3. File Search — El Rapidito:
+Busca cualquier archivo en menos de 1 segundo.
+Reduce desperdicio de tokens en navegación.
+claude install-skill https://github.com/muratcankoylan/agent-skills-for-context-engineering
+
+### 4. Context Optimizer (14K estrellas) — El Optimizador:
+Claude solo carga el contexto relevante cuando lo necesita.
+Extiende duración de sesiones. Más rendimiento por token.
+claude install-skill https://github.com/ComposioHQ/awesome-claude-skills/blob/master/content-research-writer/SKILL.md
+
+### 5. Skill Creator (105K estrellas, oficial Anthropic) — La Fábrica:
+Describe lo que necesitas en español → SKILL.md listo.
+Crea habilidades personalizadas en menos de 5 minutos.
+claude install-skill https://github.com/anthropics/skills/tree/main/skills/skill-creator
+
+### Cómo trabajan juntas:
+Super Power → planea y dirige el proyecto completo
+Systematic Debugging → arregla errores de raíz
+File Search → pasa archivos correctos al instante
+Context Optimizer → cuida que no se desperdicien tokens
+Skill Creator → construye herramientas que no existen
+
+### Para agentes de clientes:
+- Super Power → construir agentes complejos con sub-agentes
+- Systematic Debugging → debugging antes de entregar
+- Skill Creator → crear skills personalizados por cliente
+- Context Optimizer → sesiones largas sin perder el hilo

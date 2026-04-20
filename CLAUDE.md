@@ -2110,3 +2110,55 @@ Corre lint + build + dev. Entrega resumen y localhost."
 - Combinar con Claude Web Builder para diseño avanzado
 - Combinar con Claude SEO para optimización
 - Precio sugerido: $300-800 USD por landing express
+
+## Construyendo con IA — De cero a app publicada
+
+Ruta práctica para publicar una app real hoy mismo.
+Sin experiencia técnica previa. En español.
+github.com/Hainrixz/construyeconia
+
+### Instalación (desktop — un comando):
+macOS:
+bash <(curl -fsSL https://raw.githubusercontent.com/Hainrixz/construyeconia/main/scripts/setup-mac.sh)
+
+Windows:
+irm https://raw.githubusercontent.com/Hainrixz/construyeconia/main/scripts/setup-windows.ps1 | iex
+
+Instala: Node.js, git, Codex CLI, clona repo,
+instala dependencias, levanta localhost:3000
+
+### Comandos de Codex:
+$start  → inicia build guiado
+$imlost → te reencamina cuando no sabes qué pedir
+$fixit  → diagnostica y corrige errores
+$deploy → publica en Vercel con URL pública
+
+### Ciclo de construcción:
+1. Describir claramente lo que quieres
+2. Ver resultado en navegador
+3. Detectar qué falta o cambiar
+4. Pedir cambio exacto a Codex
+5. Repetir hasta versión para mostrar
+
+### Ejemplos de prompts buenos:
+"Crea app de tareas donde pueda agregar, marcar y
+eliminar. Separa por categorías, interfaz minimal."
+
+"App de journal con entradas diarias, etiquetas por
+estado de ánimo y vista por calendario."
+
+### Ideas simples que funcionan:
+To-do list, journal/mood tracker, generador de frases,
+landing personal, contador para objetivo
+
+### Reglas para avanzar rápido:
+- Si algo falla → $fixit, no te detengas
+- Pide cambios concretos, no "hazlo mejor"
+- Primera versión rara vez sale perfecta → iterar
+- Publicar rápido > planear perfecto
+
+### Para tu negocio de agentes:
+- Usar como onboarding para clientes sin experiencia técnica
+- $deploy → URL pública para demos a prospectos
+- Combinar con The Architect para proyectos más complejos
+- Filosofía: construir → publicar → iterar con feedback real

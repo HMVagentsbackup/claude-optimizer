@@ -3168,3 +3168,43 @@ Verificar: securityheaders.com → debe dar A+
 - Combinar con Cyber Neo para auditoría completa
 - Verificar con securityheaders.com como entregable
 - Security Advisor de Supabase como check automático
+
+## 5 Skills de Diseño — Todas oficiales de Anthropic, gratis
+
+### Instalación de las 5 de un jalón (desktop):
+claude install-skill https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design/skills/frontend-design && claude install-skill https://github.com/anthropics/skills/tree/main/skills/canvas-design && claude install-skill https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder && claude install-skill https://github.com/anthropics/skills/tree/main/skills/theme-factory && claude install-skill https://github.com/anthropics/skills/tree/main/skills/algorithmic-art
+
+### 1. Frontend Design (400K+ usuarios):
+Diseña páginas y apps completas. Código real, no mockup.
+Prompt: "Diseña landing para [negocio]. Colores [X],
+tipografía [Y], animaciones suaves al scroll. Hero,
+menú, testimonios y formulario de contacto."
+
+### 2. Canvas Design:
+Pósters y gráficos para redes sociales. PNG o PDF.
+Prompt: "Crea póster para Instagram de [evento].
+Colores [X]. Mínimo texto, máximo impacto visual."
+
+### 3. Web Artifacts Builder:
+Apps funcionales sin código. 40+ componentes incluidos.
+React + TypeScript + Tailwind automático.
+Prompt: "Crea calculadora de precios para [servicio].
+Usuario selecciona [opciones] y ve precio al instante."
+
+### 4. Theme Factory:
+10 paletas de colores + tipografías perfectas.
+Prompt: "Muéstrame todas las paletas y recomienda
+la mejor para [tipo de app/marca]."
+
+### 5. Algorithmic Art:
+100+ variaciones de arte generativo. Ni Canva ni Figma.
+Fractales, espirales, partículas. Controles interactivos.
+Prompt: "Genera fractal inspirado en [naturaleza].
+Colores [X]. Con controles de densidad y velocidad."
+
+### Referencia rápida:
+Frontend Design → páginas y apps completas
+Canvas Design   → pósters y gráficos sociales
+Web Artifacts   → apps sin código
+Theme Factory   → colores + tipografía
+Algorithmic Art → arte generativo único

@@ -2328,3 +2328,59 @@ Claude Code conecta todo por detrás
 NO vendas todo de un jalón.
 Empieza con la página → luego leads → luego el resto.
 Cada pieza justifica la siguiente.
+
+## 6 Trucos de Boris Cherny — Opus 4.7
+
+Boris Cherny = el ingeniero que construyó Claude Code.
+Publicados el 16 abril 2026 después de semanas de uso real.
+
+### 1. AUTO MODE (el más importante):
+Shift+Tab → cicla entre modos → dejar en Auto Mode
+Claude aprueba solo comandos seguros, pausa si huele raro.
+Permite correr 2-3 Claudes en paralelo sin babysittear.
+Disponible en planes Max, Teams y Enterprise.
+
+### 2. /fewer-permission-prompts:
+Escanea sesión → sugiere lista de comandos seguros →
+los agrega al allowlist automáticamente.
+Alternativa a Auto Mode para plan Pro.
+Correr una vez por semana para afinar.
+
+### 3. RECAPS (vienen prendidos por defecto):
+Claude resume qué hizo y qué falta al terminar tareas largas.
+Apagar en /config si estorban en sesiones cortas.
+Copiar a Obsidian o Linear para handoffs con el equipo.
+
+### 4. FOCUS MODE:
+/focus → esconde pasos intermedios, solo muestra resultado final.
+⚠️ No usar si eres principiante — necesitas ver cómo piensa Claude.
+Combinar con Auto Mode para sesiones largas.
+
+### 5. EFFORT LEVEL (slider de 5 niveles):
+low   → tareas triviales (renombrar, formatear)
+medium → default, tareas del día a día
+high   → refactors, debugging raro
+xhigh  → problemas complejos, arquitectura
+max    → cuando nada más ha funcionado
+También funciona en Sonnet 4.6 y Opus 4.6.
+
+### 6. DALE CÓMO PROBAR SU TRABAJO (el más importante):
+Backend → darle cómo arrancar el servidor
+Frontend → Claude Chromium extension (code.claude.com/docs/en/chrome)
+Desktop → Computer Use
+
+Prompt tipo /go de Boris:
+"Claude, construye [tarea].
+Cuando termines ejecuta /go:
+1. Prueba end-to-end con bash/browser/computer use
+2. Corre /simplify para limpiar código
+3. Abre Pull Request con resumen
+Si algo falla, arréglalo y vuelve a probar antes del PR."
+
+### Orden recomendado para activar:
+1. Auto Mode → base de todo
+2. Recaps → ya vienen prendidos, solo léelos
+3. Dale cómo verificar → sin esto auto mode es riesgo
+4. Effort level → moverlo por tarea
+5. Focus mode → solo cuando confíes en el modelo
+6. /fewer-permission-prompts → una vez por semana

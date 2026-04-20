@@ -3979,3 +3979,99 @@ Haiku 4.5 → ultra rápido, ahorro de tokens
 ### Barra de estado de Claude Code:
 ~/proyecto · sonnet-4 · 1M ctx · 67% ■■■■░░
 Si ves modelo nuevo y está lento → /model claude-sonnet-4-5-20250929
+
+## Artefactos de Claude — Apps en el navegador sin código
+
+Apps funcionales al lado del chat. Sin descargar nada.
+Plan gratuito funciona para crear y probar.
+claude.ai → pedir lo que quieres → artefacto aparece a la derecha
+
+### 6 cosas que puedes crear:
+Sitios web (landing, portfolio, precios)
+Dashboards (sube Excel/CSV → gráficas interactivas)
+Herramientas (calculadoras, convertidores, timers)
+Juegos (trivia, memory, snake, puzzles)
+Documentos (cartas, reportes con diseño)
+Visualizaciones (gráficas animadas, diagramas)
+
+### Prompts de ejemplo:
+
+SITIO WEB:
+"Crea sitio para cafetería 'Café Luna'. Incluye:
+hero atractivo, menú con precios, sobre nosotros,
+formulario de contacto. Colores cálidos, diseño moderno."
+
+DASHBOARD CON DATOS:
+"Con el archivo que te subí, crea dashboard interactivo:
+gráfica de barras ventas por mes, circular por categorías,
+tabla con filtros, resumen con números importantes."
+
+CHATBOT CON IA (Claude dentro de Claude):
+"Crea chatbot para practicar inglés. Usuario escribe,
+la app: corrige gramática, sugiere vocabulario, da
+puntuación 1-10. Selector de nivel, botón para cambiar tema."
+
+### Publicar:
+Botón "Publicar" → link único → compartir
+Sin IA: funciona sin cuenta. Con IA: necesita cuenta Claude.
+
+### Tecnología incluida automáticamente:
+React, Tailwind CSS, Shadcn UI, Recharts, Plotly.js, Lucide
+
+---
+
+## Cómo Hablarle a Claude — Los 4 elementos
+
+Claude es un empleado brillante que no te conoce.
+Entre más contexto le des, mejores respuestas obtienes.
+
+### Los 4 elementos:
+1. QUIÉN ES → "Eres un experto en [área]..."
+2. TU SITUACIÓN → "Estoy haciendo A para B porque necesito C"
+3. QUÉ QUIERES → específico, no vago
+4. CÓMO LO QUIERES → formato, tono, colores, funciones
+
+### Antes vs después:
+
+ANTES: "Necesito una app para agendar citas"
+DESPUÉS: "Eres desarrollador senior en Next.js. Estoy
+construyendo sistema de citas para mi clínica dental
+porque pacientes no pueden agendar fuera de horario.
+Quiero componente de calendario con horarios disponibles
+y confirmación por WhatsApp. Responsive, colores claros,
+botones grandes para personas mayores."
+
+### Plantillas listas:
+
+AUTOMATIZACIÓN:
+"Eres experto en automatización no-code.
+Estoy [situación] porque necesito [resultado].
+Quiero automatización que [descripción].
+Requisitos: herramientas gratuitas, paso a paso,
+qué hacer si algo falla, sin tecnicismos."
+
+DESARROLLO DE SOFTWARE:
+"Eres desarrollador senior en [stack].
+Estoy construyendo [proyecto] porque necesito [objetivo].
+Quiero que construyas [específico].
+Requisitos: código limpio, responsive, usa [tecnologías],
+manejo de errores incluido."
+
+CONTENIDO Y MARKETING:
+"Eres copywriter experto en [nicho].
+Estoy preparando [qué] porque necesito [objetivo].
+Quiero [específico: 5 posts carrusel sobre X].
+Requisitos: tono cercano, hook + desarrollo + CTA,
+español latinoamericano."
+
+ESTRATEGIA DE NEGOCIO:
+"Eres consultor de negocios en [industria].
+Estoy en [situación] porque necesito [objetivo].
+Quiero [estrategia específica].
+Requisitos: realista con mis recursos [descripción],
+prioriza por impacto, métricas para saber si voy bien."
+
+### Tips:
+- No siempre necesitas los 4 (para preguntas rápidas no)
+- Itera: "hazlo más corto", "cambia el tono", "más detalle en X"
+- Guarda tus mejores prompts para reutilizar

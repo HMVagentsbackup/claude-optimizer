@@ -3674,3 +3674,69 @@ Dame lista para decidir cuáles cancelar."
 - Claude pide confirmación antes de cada acción
 - No envía correos sin tu aprobación
 - Revocar acceso: Settings → Connections → desconectar
+
+## VibeCoding 101 — De idea a app publicada
+
+### Checklist completo:
+1. Escribe idea y público objetivo en una frase
+2. Genera PRD con el prompt (ver abajo)
+3. Elige herramienta según nivel
+4. Conecta backend (Supabase/Firebase)
+5. Si usas IA con memoria → agregar Pinecone
+6. Cierra MVP y valida flujo extremo a extremo
+7. Publica en Vercel → evalúa App Store / Play Store
+
+### Herramientas por nivel:
+Sin código: Lovable, Bolt, Base44, Replit
+Con algo de código: Cursor, Windsurf, Claude Code
+Backend: Supabase, Firebase
+Publicar web: Vercel
+App Store: $100/año (Apple), $25 único (Google)
+
+### Prompt PRD (para Claude o ChatGPT):
+"Actúa como PM senior y crea PRD completo en español.
+Contexto: nombre [X], problema [X], usuario [X],
+resultado esperado [X], plataformas [X],
+must-have [X], nice-to-have [X], restricciones [X].
+
+Incluye: resumen ejecutivo, problema y oportunidad,
+ICP, objetivos, alcance v1 (in/out scope), requisitos
+funcionales y no funcionales, arquitectura sugerida,
+user stories, criterios de aceptación, KPIs, riesgos,
+plan en fases (MVP→v1→v2). En markdown, sin relleno."
+
+---
+
+## Arquitecto de Ingresos — Plan de monetización en 24h
+
+Prompt táctico que convierte tu contexto en plan ejecutable.
+Principio 80/20. Sin relleno. Con prioridades claras.
+
+### Qué entrega:
+1. Diagnóstico táctico adaptado a tu contexto
+2. KILLER_MOVE_24H → la acción de mayor impacto hoy
+3. LOGIC_GATE → modelo mental aplicado (80/20, Inversión)
+4. PROFIT_MATRIX → tabla de 3-7 palancas con:
+   impacto %, confianza %, tiempo a resultado, esfuerzo
+5. AUDIT_TRAIL → datos verificados vs supuestos
+6. SPRINT_PLAN_14_DIAS → plan día a día con entregables
+
+### Cómo usarlo:
+1. Copiar el prompt maestro
+2. Pegarlo en Claude (en conversación con historial tuyo)
+3. Ejecutar primero el KILLER_MOVE_24H
+4. Seguir el sprint de 14 días
+
+### Prompt maestro (versión corta para referencia):
+"Actúa en MODO EJECUCIÓN DE INGRESOS.
+Usa TODO el historial disponible de mi contexto.
+Aplica Pareto 80/20 sobre mis canales y activos.
+Entrega en orden: diagnóstico táctico → KILLER_MOVE_24H
+→ LOGIC_GATE → PROFIT_MATRIX → AUDIT_TRAIL
+→ SPRINT_PLAN_14_DIAS → riesgos.
+Sin motivación genérica, sin relleno, solo acción."
+
+### Para clientes:
+- Usar como sesión de discovery de monetización
+- PROFIT_MATRIX = propuesta de valor estructurada
+- SPRINT_14_DIAS = entregable concreto para el cliente

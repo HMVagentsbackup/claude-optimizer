@@ -3583,3 +3583,94 @@ Slack, Telegram, Google Calendar, GitHub, Linear
 - Poner límite mensual en Billing para dormir tranquilo
 - Pedir autorización antes de acciones importantes
 - Iterar con Claude hasta que el agente quede bien
+
+## Shopify MCP — Tu tienda en piloto automático
+
+31 herramientas oficiales de Shopify. Claude maneja toda la tienda.
+Productos, pedidos, clientes, descuentos, inventario.
+
+### Instalación (desktop):
+Claude Code:
+claude mcp add --transport stdio shopify-dev-mcp -- npx -y @shopify/dev-mcp@latest
+
+Claude Desktop (.mcp.json):
+{
+  "mcpServers": {
+    "shopify-dev-mcp": {
+      "command": "npx",
+      "args": ["-y", "@shopify/dev-mcp@latest"]
+    }
+  }
+}
+
+### Prompts esenciales:
+
+SUBIR PRODUCTOS EN LOTE:
+"Sube estos [N] productos con: nombre, precio, descripción.
+Ponles la etiqueta [X] a todos."
+
+CAMBIAR PRECIOS:
+"Busca productos con etiqueta [X] y súbeles el precio [N]%.
+Muéstrame tabla con precio anterior y nuevo antes de aplicar."
+
+REPORTE DE VENTAS:
+"¿Cuáles son mis 5 productos más vendidos esta semana?
+Dame nombre, unidades vendidas e ingreso total."
+
+PEDIDOS PENDIENTES:
+"Muéstrame pedidos pendientes de envío, ordenados por fecha.
+¿Cuáles tienen más de 3 días sin enviarse?"
+
+CREAR DESCUENTO:
+"Crea código BIENVENIDO con 20% en toda la tienda.
+Solo una vez por cliente. Expira en 30 días."
+
+### 31 herramientas disponibles:
+Productos (8): crear, editar, buscar, lote
+Pedidos (10): ver, filtrar, cancelar, reembolsar
+Clientes (8): buscar, crear, actualizar, segmentar
+Descuentos (3): crear códigos, ver activos
+Inventario (1): ajustar por ubicación
+Etiquetas (1): organizar recursos
+
+---
+
+## Organiza Email con Claude Desktop
+
+Conecta Gmail a Claude Desktop. Sin código.
+Plan Pro ($20/mes) o Team requerido.
+
+### Conexión:
+Claude Desktop → Settings → Connections → Google Workspace
+→ Permitir permisos → listo
+
+### 6 prompts esenciales:
+
+ORGANIZAR POR TEMA:
+"Revisa mis últimos 50 correos y agrúpalos por tema:
+trabajo, personal, facturas, newsletters y otros."
+
+ETIQUETAR URGENTES:
+"De mis correos no leídos, identifica cuáles necesitan
+respuesta hoy y cuáles pueden esperar. Explica por qué."
+
+RESUMIR CONVERSACIONES:
+"Resume los 3 hilos más largos de esta semana.
+Puntos clave y acciones pendientes."
+
+BUSCAR FACTURAS:
+"Busca en correos del último mes facturas y recibos.
+Lista con fecha, remitente y monto."
+
+BORRADORES DE RESPUESTA:
+"Revisa correos sin responder de los últimos 3 días
+y redacta borradores cortos y profesionales."
+
+LIMPIEZA:
+"Identifica newsletters y correos automáticos repetidos.
+Dame lista para decidir cuáles cancelar."
+
+### Seguridad:
+- Claude pide confirmación antes de cada acción
+- No envía correos sin tu aprobación
+- Revocar acceso: Settings → Connections → desconectar

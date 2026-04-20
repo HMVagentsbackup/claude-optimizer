@@ -2441,3 +2441,45 @@ HANDOFF A PRODUCCIÓN:
 - Validar apps antes de gastar en desarrollo
 - Combinar con Claude Web Builder para código final
 - Combinar con Claude SEO para optimización
+
+## All Deploy — De tu compu a internet
+
+Cierra el combo: The Architect → Cyber Neo → All Deploy.
+Detecta tipo de proyecto, revisa seguridad, preview y deploy.
+Open source: github.com/Hainrixz/all-deploy
+
+### Instalación (desktop):
+"Instala https://github.com/Hainrixz/all-deploy
+Clónalo en ~/.claude/skills/all-deploy"
+O: git clone https://github.com/Hainrixz/all-deploy.git ~/.claude/skills/all-deploy
+
+### Uso:
+Abrir Claude Code en carpeta del proyecto → /all-deploy
+
+### Flujo automático:
+1. Detecta tipo de proyecto
+2. Chequeo de seguridad previo
+3. URL de preview para verificar
+4. Deploy a producción
+5. Comando de rollback listo
+
+### Detección inteligente:
+- Páginas web/frontend → Vercel
+- Agentes, APIs, workers → Railway
+- Docker, proyectos pesados → VPS propio
+
+### 3 capas de seguridad:
+- Revisión previa (secretos, variables expuestas)
+- Preview antes de producción (nunca subes a ciegas)
+- Rollback en un segundo si algo falla
+
+### El combo completo de la comunidad:
+1. The Architect → plano de 16 secciones
+2. Cyber Neo → auditoría de seguridad
+3. All Deploy → de idea a URL pública
+
+### Para tu negocio de agentes:
+- Entregar agentes al cliente con URL real el mismo día
+- Preview para que el cliente apruebe antes de producción
+- Rollback instantáneo si algo falla en vivo
+- Sin depender de DevOps ni configuración manual

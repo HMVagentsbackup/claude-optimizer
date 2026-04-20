@@ -3864,3 +3864,58 @@ Avanzado → Agent SDKs + Skills + Quickstarts
 - Agent SDK = agentes autónomos que toman decisiones
 - Cookbook = recetas para casos específicos (RAG, vision, tool use)
 - Skills = habilidades para Claude Code de tus clientes
+
+## Claude Oficina Gratis — Reemplaza Microsoft Office
+
+5 skills oficiales de Anthropic. Todas gratis.
+
+### Instalación de las 5 de un jalón:
+claude install-skill https://github.com/anthropics/skills/tree/main/skills/pdf && claude install-skill https://github.com/anthropics/skills/tree/main/skills/xlsx && claude install-skill https://github.com/anthropics/skills/tree/main/skills/docx && claude install-skill https://github.com/anthropics/skills/tree/main/skills/pptx && claude install-skill https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md
+
+### 5 skills:
+PDF → extrae tablas, llena formularios, combina, crea PDFs
+XLSX → fórmulas automáticas, gráficos, análisis de datos
+DOCX → documentos Word con tablas, imágenes, formato
+PPTX → presentaciones completas en una oración
+Doc Co-Authoring → escritura colaborativa sección por sección
+
+### Prompts de ejemplo:
+PDF: "Extrae todas las tablas de este PDF y crea Excel con una hoja por tabla."
+XLSX: "Crea reporte de ventas mensual con fórmulas de totales y gráfico de barras."
+DOCX: "Crea documento Word profesional con propuesta de servicios para mi cliente."
+PPTX: "Crea presentación de 10 slides del plan de marketing Q2 con gráficos y notas."
+
+---
+
+## 5 Skills Esenciales — Las apps de tu teléfono
+
+### Instalación de las 5 de un jalón:
+claude install-skill https://github.com/anthropics/skills/tree/main/skills/skill-creator && git clone https://github.com/Hainrixz/humanizalo.git ~/.claude/skills/humanizalo && npx skills add coreyhaines31/marketingskills && claude install-skill https://github.com/nextlevelbuilder/ui-ux-pro-max-skill && npx superpowers@latest init
+
+### 1. Skill Creator (oficial Anthropic):
+Crea tus propias habilidades en español en 5 minutos.
+"/skill-creator Quiero skill que genere reportes PDF de juntas."
+
+### 2. Humanízalo:
+Detecta 40+ patrones de IA. Evalúa en 6 dimensiones.
+"/humanizalo [tu texto con IA]"
+
+### 3. Marketing Skills (40+ herramientas):
+"Crea estrategia de lanzamiento para [producto].
+Precio: $[X]. Audiencia: [X]. Incluye landing, emails, anuncios."
+
+### 4. UI UX Pro Max:
+67 estilos + 161 paletas + 57 fuentes + 99 directrices UX.
+"Landing estilo Notion-minimal, paleta neutros, tipografía Inter."
+
+### 5. Superpowers:
+Sub-agentes en paralelo + TDD integrado + piloto automático.
+"Usa superpowers para construir [app]. Planea primero,
+reparte en sub-agentes y entrega funcionando."
+
+### Referencia rápida:
+Skill Creator → crear skills propios
+Humanízalo → eliminar escritura de IA
+Marketing Skills → estrategia de marketing completa
+UI UX Pro Max → diseño profesional automático
+Superpowers → desarrollo con sub-agentes

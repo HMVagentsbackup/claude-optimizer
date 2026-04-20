@@ -2162,3 +2162,48 @@ landing personal, contador para objetivo
 - $deploy → URL pública para demos a prospectos
 - Combinar con The Architect para proyectos más complejos
 - Filosofía: construir → publicar → iterar con feedback real
+
+## Construye Tu App — 3 pasos sin saber programar
+
+### Paso 1 — La Entrevista (en claude.ai):
+"Quiero construir [tu idea].
+Hazme una entrevista. Pregúntame TODO:
+- ¿Qué quiero que haga exactamente?
+- ¿Para quién es?
+- ¿Cómo quiero que se vea?
+- ¿Qué funciones necesita?
+- ¿Hay algo parecido que me guste?
+Hazme las preguntas una por una.
+Cuando tengas todo, dime: ¿armo el plan?"
+
+### Paso 2 — El Plan (en claude.ai):
+"Con todo lo que hablamos, arma plan completo:
+1. Nombre del proyecto
+2. Qué es y para quién (2-3 líneas)
+3. Lista de funciones principales
+4. Qué se construye PRIMERO (mínimo viable)
+5. Qué va DESPUÉS (mejoras)
+6. Tecnologías recomendadas
+7. Estructura de archivos
+Ponlo en un archivo organizado para copiar y guardar."
+
+### Paso 3 — A Construir (en Claude Code):
+"Lee el plan que te doy y analízalo completo.
+Usa /plan para organizar paso a paso:
+- Qué va primero
+- Qué sigue después
+- Cuándo probamos cada cosa
+Cuando apruebe el plan, construye paso a paso.
+Cada paso: dime qué hiciste y cómo lo pruebo."
+
+### Ideas para principiantes:
+Lista de tareas, página de negocio,
+calculadora de presupuestos, quiz/trivia,
+portafolio personal
+
+### Para vender a clientes:
+- Usar este flujo como metodología de discovery
+- La entrevista = entender al cliente
+- El plan = propuesta técnica
+- Claude Code = ejecución
+- Cobrar $500-2,000 USD por proyecto completo

@@ -3919,3 +3919,63 @@ Humanízalo → eliminar escritura de IA
 Marketing Skills → estrategia de marketing completa
 UI UX Pro Max → diseño profesional automático
 Superpowers → desarrollo con sub-agentes
+
+## De Fábrica a Pro — 4 upgrades gratuitos
+
+### Instalación de las 4 de un jalón:
+git clone https://github.com/mrgoonie/claudekit-skills.git ~/.claude/skills/claudekit-skills && npx superpowers@latest init && npx -y @anthropic-ai/claude-code mcp add context7 -- npx -y @upstash/context7-mcp@latest && claude install-skill https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier
+
+### 1. Pensamiento Secuencial:
+Claude piensa paso a paso antes de responder.
+Menos errores. No asume. Pregunta si no sabe.
+"Piensa paso a paso: [problema complejo]"
+github.com/mrgoonie/claudekit-skills
+
+### 2. Superpowers:
+Sub-agentes en paralelo + TDD + revisión propia.
+"Usa superpowers para construir [app]. Planea primero."
+npx superpowers@latest init
+
+### 3. Context7:
+Documentación actualizada de 10,000+ librerías.
+"Usa context7 para revisar docs de [librería] y [tarea]."
+npx -y @anthropic-ai/claude-code mcp add context7 -- npx -y @upstash/context7-mcp@latest
+
+### 4. Simplificador de Código:
+Elimina complejidad. Código corto, limpio, mantenible.
+"/simplify — elimina lo que sobre, max 300 líneas por archivo."
+claude install-skill https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier
+
+---
+
+## Cambia de Modelo — Cuando Claude se siente lento
+
+Modelo nuevo saturado = cambiar al anterior.
+Resultado: mejores respuestas + menos tokens gastados.
+
+### En claude.ai:
+Selector de modelo → Más modelos → elegir anterior
+
+### En Claude Code (dentro de sesión):
+/model claude-sonnet-4-5-20250929
+/model claude-opus-4-5-20251101
+/model claude-haiku-4-5-20251001
+
+### Al iniciar Claude Code:
+claude --model claude-sonnet-4-5-20250929
+
+### En subagentes (.claude/agents/mi-agente.md):
+---
+model: sonnet  (o haiku u opus)
+---
+Haiku → tareas simples (documentación, clasificación)
+Opus → trabajo complejo (arquitectura, investigación)
+
+### Los 3 modelos anteriores:
+Sonnet 4.5 → rápido y eficiente para código
+Opus 4.5 → razonamiento profundo, tareas complejas
+Haiku 4.5 → ultra rápido, ahorro de tokens
+
+### Barra de estado de Claude Code:
+~/proyecto · sonnet-4 · 1M ctx · 67% ■■■■░░
+Si ves modelo nuevo y está lento → /model claude-sonnet-4-5-20250929

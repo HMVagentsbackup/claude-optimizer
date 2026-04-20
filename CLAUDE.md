@@ -2590,3 +2590,54 @@ API/Backend, Internal Tool, Content Platform
 ❌ Construir en el folder de plática
 ❌ Pedir que mejore el plan a media construcción
 ❌ Meter features extra antes de terminar el blueprint
+
+## Computer Use — Control remoto de tu computadora
+
+Claude ve tu pantalla, mueve el mouse, hace clic y escribe.
+Sin API necesaria. Cualquier app que tú uses, Claude también.
+Research preview en macOS — Cowork y Claude Code.
+
+### Activación:
+Cowork: Settings → Computer Use → activar toggle
+Claude Code: claude --computer-use
+
+### Para qué sirve:
+- Apps sin API (CRMs viejos, sistemas internos)
+- Formularios repetitivos automatizados
+- Navegación de menús profundos
+- Migración de datos entre apps
+- Reportes manuales automatizados
+- Testing y QA de aplicaciones
+
+### Prompt para automatizar app sin API:
+"Abre [nombre app], navega al formulario de [X]
+y llena estos datos:
+- Campo 1: [valor]
+- Campo 2: [valor]
+Revisa que todo esté correcto antes de guardar."
+
+### Prompt para QA automatizado:
+"Abre mi proyecto en http://localhost:3000.
+Navega todas las páginas del menú principal.
+En cada página:
+1. Verifica errores en consola
+2. Revisa que botones sean clickeables
+3. Confirma que imágenes cargan
+4. Prueba formularios con datos de prueba
+Genera reporte con problemas y sugerencias de fix."
+
+### Combo Computer Use + Dispatch:
+Tú te vas → Claude sigue trabajando en tu compu
+desde tu celular → trabajo listo cuando regresas
+
+Prompt ejemplo:
+"Abre Excel 'reporte-ventas.xlsx', extrae totales
+por región, crea gráfica de barras, guarda como PNG.
+Luego abre Slack y manda al canal #reportes."
+
+### Para agentes de clientes:
+- Automatizar apps legacy sin API
+- QA automático antes de cada deploy
+- Migración de datos entre sistemas
+- Combinar con /loop para tareas recurrentes
+⚠️ Empieza con tareas simples para familiarizarte

@@ -4167,3 +4167,73 @@ Agent SDK → integrar programáticamente
 docs.anthropic.com/en/docs/claude-code/skills
 docs.anthropic.com/en/docs/claude-code/skills-quickstart
 docs.anthropic.com/en/docs/claude-code/skills-best-practices
+
+## Perfil de Claude — System prompt permanente para todas las conversaciones
+
+claude.ai → ícono abajo izquierda → Settings → Profile
+
+### Plantilla lista para copiar y personalizar:
+## Quién soy
+- Me llamo [nombre]
+- Soy [rol: emprendedor/desarrollador/marketer/etc.]
+- Mi industria es [industria]
+- Mi nivel técnico es [principiante/intermedio/avanzado]
+
+## Idioma y tono
+- Respóndeme siempre en español latinoamericano
+- Tono directo, práctico, sin rodeos
+- Usa "tú" (no "usted")
+- Si no sabes algo, dilo — no inventes
+
+## Cómo quiero las respuestas
+- Ve al grano. Primero la respuesta, luego la explicación
+- Usa listas y bullets cuando tenga sentido
+- Máximo 2-3 párrafos, a menos que pida más detalle
+- Si hay más de una opción, dame la mejor primero
+
+## Lo que NO debes hacer (lo más importante)
+- No empieces con "¡Excelente pregunta!" ni "¡Por supuesto!"
+- No uses frases de relleno como "es importante destacar que"
+- No repitas mi pregunta de vuelta
+- No uses jerga corporativa
+- No des disclaimers innecesarios
+- No uses emojis a menos que yo los use primero
+- No termines con "¿Hay algo más en lo que pueda ayudarte?"
+
+## Código (si aplica)
+- Mi stack: [Next.js/Python/React/etc.]
+- Código limpio y legible sobre código "inteligente"
+- Siempre incluye manejo de errores básico
+
+### Tips:
+- Las reglas de lo que NO hacer son lo más poderoso
+- 10 líneas claras > 50 líneas vagas
+- Actualizar cuando cambies de proyecto o rol
+
+---
+
+## Cuál Plan de Claude Elegir
+
+### Los 4 planes:
+Gratis ($0) → para probar. 5-20 mensajes/día. Sin Claude Code.
+Pro ($20/mes) → para aprender. ~45 msgs/5h. Sonnet + Haiku + Claude Code.
+Max 5x ($100/mes) → para trabajar. Opus + Computer Use + integraciones.
+Max 20x ($200/mes) → para no parar. 20x más que Pro. Prácticamente ilimitado.
+
+### La regla más importante:
+Si llegas al límite, probablemente hablas de más — no necesitas subir de plan.
+Aprende a ser más específico primero.
+
+### Cuándo subir de plan:
+Gratis → Pro: cuando quieras Claude Code y más mensajes
+Pro → Max 5x: cuando Claude esté contigo todo el día
+Max 5x → Max 20x: cuando llegues al límite del de $100 TODOS los días
+
+### Consejos para rendir más:
+- Estructura ideas antes de escribir
+- Un buen mensaje > diez malos mensajes
+- Usar modelo correcto por tarea:
+  Haiku → cosas simples y rápidas
+  Sonnet → día a día (default)
+  Opus → tareas pesadas y complejas
+- Dominar el plan actual antes de subir

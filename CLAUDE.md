@@ -3740,3 +3740,69 @@ Sin motivación genérica, sin relleno, solo acción."
 - Usar como sesión de discovery de monetización
 - PROFIT_MATRIX = propuesta de valor estructurada
 - SPRINT_14_DIAS = entregable concreto para el cliente
+
+## Comando de Sistema — Crea system prompts profesionales
+
+System prompt que te guía por 5 fases para crear
+otros system prompts. Una pregunta a la vez.
+
+### Cómo usarlo:
+1. Copiar el system prompt completo (tododeia.com/community/comando-de-sistema)
+2. Pegarlo en el campo de system prompt de tu agente
+3. Responder las preguntas fase por fase
+4. Recibir el prompt final en bloque de código listo para copiar
+
+### Las 5 fases:
+Fase 1 → propósito, audiencia, plataforma
+Fase 2 → nombre, tono, restricciones (nunca hacer/decir)
+Fase 3 → conocimiento, contexto, reglas y pasos
+Fase 4 → inputs típicos, formato de respuesta
+Fase 5 → casos especiales, qué hacer si no sabe
+
+### Estructura del prompt final que genera:
+# Identidad (quién es la IA y su propósito)
+## Personalidad y Tono
+## Contexto y Conocimiento
+## Reglas y Comportamiento
+## Formato de Respuesta
+## Límites
+
+### Para agentes de clientes:
+- Usar para crear system prompt del agente de WhatsApp
+- Crear system prompt del agente de ventas
+- Crear system prompt del CRM personalizado
+- Iterar hasta que el cliente lo apruebe
+
+---
+
+## Construye con Estructura — Prompt maestro de producto
+
+Convierte idea suelta en ruta de ejecución clara.
+5 fases: Descubrimiento → Planeación → Construcción → Pulido → Entrega
+
+### Cómo usarlo:
+"Actúa como mi cofundador técnico.
+Idea del producto: [X]
+Usuario objetivo: [X]
+Problema que resuelve: [X]
+Nivel de seriedad: [explorar/uso personal/compartir/lanzar]
+Tiempo y recursos: [X]"
+
+### Las 5 fases que ejecuta:
+1. DESCUBRIMIENTO → separa v1 de versiones futuras
+2. PLANEACIÓN → plan técnico simple, complejidad, dependencias
+3. CONSTRUCCIÓN → por etapas visibles, prueba antes de avanzar
+4. PULIDO → errores, casos límite, móvil y desktop
+5. ENTREGA → deploy, instrucciones, documentación, mejoras v2
+
+### Formato de respuesta que entrega:
+Diagnóstico inicial → Plan v1 (in/out scope) →
+Enfoque técnico simple → Etapas de construcción →
+Dependencias → Validación → Plan de entrega
+
+### Reglas clave del prompt:
+- Tú = product owner (decisiones de negocio)
+- Claude = cofundador técnico (ejecuta)
+- Señala cuando estés sobrecomplicando
+- Avanza rápido pero con visibilidad
+- Si es muy amplio → pedir recortar a MVP de 7 días

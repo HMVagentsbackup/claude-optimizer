@@ -3806,3 +3806,61 @@ Dependencias → Validación → Plan de entrega
 - Señala cuando estés sobrecomplicando
 - Avanza rápido pero con visibilidad
 - Si es muy amplio → pedir recortar a MVP de 7 días
+
+## Academia Claude — Cursos gratuitos oficiales de Anthropic
+
+Todos gratuitos. Algunos con certificado oficial.
+anthropic.com/learn y anthropic.skilljar.com
+
+### Ruta por nivel:
+Principiante: Claude 101 → AI Fluency → Claude for Personal
+Intermedio: Claude for Work → Skills → Claude Code in Action
+Avanzado: Build with Claude → APIs & SDKs → MCP → Agents
+
+### Cursos destacados:
+Claude 101: anthropic.skilljar.com/claude-101
+Claude Code in Action: anthropic.skilljar.com/claude-code-in-action
+
+### Temas disponibles:
+APIs & SDKs, Prompt Engineering, Agents, MCP,
+Claude Code, Tool Use, Vision, RAG,
+Extended Thinking, Evaluations
+
+---
+
+## Anthropic GitHub — 73+ repos open source
+
+github.com/anthropics
+
+### Repos más importantes (por estrellas):
+Skills (86.2K) → colección de skills para Claude Code
+Claude Code (74.8K) → código fuente completo de Claude Code
+Anthropic Cookbook (34.3K) → notebooks con recetas prácticas
+Prompt Engineering Tutorial (32.8K) → tutorial interactivo
+Courses (19.2K) → material de cursos oficiales
+Quickstarts (15.1K) → templates de apps completas
+
+### SDKs disponibles:
+Python SDK (2.9K) → data science y backend
+TypeScript SDK (1.7K) → apps web, Next.js
+Agent SDK Python (5.2K) → agentes autónomos Python
+Agent SDK TypeScript (905) → agentes autónomos TS
+También: Go, Ruby, C#, PHP
+
+### Quickstarts (templates listos para clonar):
+Customer Support Agent → agente que responde con base de conocimiento
+Financial Analyst → accede datos en tiempo real, genera reportes
+Computer Use Demo → Claude controla tu computadora
+Browser Tools → Claude navega y extrae info de webs
+Autonomous Coding Agent → programa, identifica problemas, ejecuta tests
+
+### Ruta de inicio:
+Principiante → Prompt Engineering Tutorial + Cookbook básico
+Intermedio → Cookbook avanzado (RAG, tool use) + Claude Code + SDKs
+Avanzado → Agent SDKs + Skills + Quickstarts
+
+### Para tu negocio de agentes:
+- Quickstarts = base para agentes de clientes
+- Agent SDK = agentes autónomos que toman decisiones
+- Cookbook = recetas para casos específicos (RAG, vision, tool use)
+- Skills = habilidades para Claude Code de tus clientes

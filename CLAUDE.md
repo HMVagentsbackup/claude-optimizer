@@ -2839,3 +2839,70 @@ Con hack: Claude construye, Codex arregla → tokens de Claude duran el doble
 - Codex revisa código antes de entregar cada agente
 - /codex:adversarial-review como parte del proceso de seguridad
 - Combinar con Cyber Neo para auditoría completa
+
+## Claude Banana — Prompts profesionales para imágenes
+
+Convierte "un gato en un jardín" en un prompt cinematográfico.
+7 ingredientes automáticos. 9 modos especializados.
+github.com/Hainrixz/claude-banana
+
+### Los 7 ingredientes que agrega:
+01. Sujeto (qué aparece)
+02. Estilo visual (foto, 3D, acuarela, cine)
+03. Entorno (estudio, naturaleza, ciudad)
+04. Iluminación (golden hour, dramática, neón)
+05. Acción (movimiento, pose, interacción)
+06. Ángulo de cámara (cenital, eye-level, gran angular)
+07. Texturas (piel, tela, metal, agua)
+
+### 9 modos especializados:
+Cinema, Producto, Retrato, Moda, UI Design,
+Logos, Paisajes, Abstracto, Infografías
+
+### Herramientas gratuitas de Google para generar:
+Flow: labs.google/fx/tools/flow
+Whisk: labs.google/fx/tools/whisk
+
+### Prompt de preset de marca:
+"Crea preset con: paleta [colores], estilo [X],
+iluminación [Y], texturas [Z].
+Aplica a: [descripción de imagen]"
+
+### Reglas:
+- Formato narrativo, NO listas de keywords
+- Sin "4K", "masterpiece", "hyperrealistic"
+- Compatible con Gemini, Midjourney, DALL-E, SD
+
+---
+
+## Humanízalo — Texto de IA → texto humano
+
+Detecta 40+ patrones que delatan IA y los reescribe.
+Se revisa 3 veces y necesita 42/60 puntos para aprobar.
+github.com/Hainrixz/humanizalo
+
+### Instalación (desktop):
+git clone https://github.com/Hainrixz/humanizalo.git ~/.claude/skills/humanizalo
+
+### Uso:
+/humanizalo → pegar texto
+"Humaniza este texto: [texto]"
+"Humaniza el texto en mi-borrador.md"
+
+### 40+ patrones que detecta:
+INFLAR: "momento crucial", "papel vital", "hito significativo"
+VOCABULARIO IA: "además", "crucial", "profundizar", "navegar"
+ESTRUCTURA: contrastes binarios "No es X. Es Y."
+FORMATO: guiones largos (—), negritas mecánicas
+COMUNICACIÓN: "¡Espero que esto ayude!", frases genéricas
+
+### Señal #1 de texto IA: guiones largos (—) por todos lados
+
+### 6 dimensiones de puntuación:
+Directo, Ritmo, Confianza, Autenticidad, Densidad, Alma
+
+### Como producto para clientes:
+- Humanizar contenido de marketing antes de publicar
+- Emails y propuestas que suenan a persona real
+- Combinar con Viral Script Combo para contenido en redes
+- Combinar con Open Carrusel para carruseles auténticos

@@ -3313,3 +3313,84 @@ Excel MCP → maneja todos los números y reportes
 - Tavily → agente que busca información en tiempo real
 - Excel MCP → agente que genera reportes automáticos
 - Obsidian Skills → base de conocimiento del cliente
+
+## Mejora Prompts — Plugin que evalúa prompts antes de ejecutar
+
+Filtra prompts vagos y hace preguntas inteligentes.
+31% menos tokens desperdiciados.
+github.com/severity1/claude-code-prompt-improver
+
+### Instalación (desktop):
+claude plugin marketplace add severity1/severity1-marketplace
+claude plugin install prompt-improver@severity1-marketplace
+claude (reiniciar)
+
+### Cómo funciona:
+- Prompt CLARO → pasa directo sin overhead
+- Prompt VAGO → hace 1-6 preguntas antes de ejecutar
+- Bypass: usar * al inicio para saltar evaluación
+- Comandos con / o # se ignoran automáticamente
+
+### Prompts vagos que activan el plugin:
+"arregla el bug" → pregunta: ¿qué archivo? ¿error esperado?
+"agrega tests" → pregunta: ¿unitarios o integración? ¿a qué?
+"mejora el rendimiento" → pregunta: ¿frontend, backend, BD?
+
+### Prompt claro que pasa directo:
+"En src/components/Header.tsx el botón de login no redirige.
+onClick llama signIn() pero sin redirect. Agrega
+router.push('/dashboard') después de que signIn() resuelva."
+
+---
+
+## Claude Ads — Tu agencia de publicidad en la terminal
+
+190+ checks. Ads Health Score 0-100. 6 agentes en paralelo.
+6 plataformas: Google, Meta, YouTube, TikTok, LinkedIn, Microsoft.
+github.com/AgriciDaniel/claude-ads
+
+### Instalación (desktop):
+macOS/Linux: curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-ads/main/install.sh | bash
+Windows: irm https://raw.githubusercontent.com/AgriciDaniel/claude-ads/main/install.ps1 | iex
+
+### 12 comandos:
+/ads audit      → auditoría completa multi-plataforma
+/ads google     → Google (74 checks: Search, PMax, Display)
+/ads meta       → Meta (Pixel/CAPI, creativos, audiencias)
+/ads youtube    → YouTube (Skippable, Shorts, Demand Gen)
+/ads tiktok     → TikTok (Creative-first, Smart+)
+/ads linkedin   → LinkedIn B2B (Lead Gen, Enterprise)
+/ads microsoft  → Bing Ads
+/ads creative   → auditoría de creativos todas las plataformas
+/ads landing    → evaluación de landing pages
+/ads budget     → presupuesto y estrategia de pujas
+/ads competitor → inteligencia de competidores
+/ads plan <tipo> → planificación por industria
+
+### 11 tipos de negocio con plantillas:
+SaaS, ecommerce, servicios locales, B2B enterprise,
+infoproductos, apps móviles, real estate, salud, finanzas,
+agencias, genérico
+
+### Prompts esenciales:
+
+AUDITORÍA COMPLETA:
+"/ads audit — Analiza campañas activas. Quiero:
+Health Score, 5 problemas urgentes por impacto,
+quick wins para hoy, comparación entre plataformas."
+
+ANÁLISIS COMPETIDORES:
+"/ads competitor — Competidores: [lista].
+Industria: [X]. Analiza sus anuncios y dame
+oportunidades donde pueda diferenciarme."
+
+NUEVA CAMPAÑA:
+"/ads plan — Negocio: [tipo]. Producto: [desc].
+Presupuesto: $[X]/mes. Objetivo: [leads/ventas].
+Plan completo con plataformas, estructura y KPIs."
+
+### Como producto para clientes:
+- Auditoría de ads como servicio inicial ($500-2,000)
+- Gestión mensual con /ads audit semanal
+- Reportes con Health Score como entregable
+- Combinar con /loop weekly para monitoreo automático

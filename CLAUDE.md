@@ -2280,3 +2280,51 @@ Stripe (cobro al cliente)
 Empieza con landing pages. Es lo más fácil de vender.
 Demo real > mil propuestas en PDF.
 Aprende mientras construyes — no antes.
+
+## 3 Servicios Para Tu Agencia de IA
+
+### SERVICIO 1 — MARKETING:
+Produce contenido y corre ads sin contratar a nadie.
+
+Skills:
+- Marketing Skills (github.com/coreyhaines31/marketingskills)
+  → 9 categorías: copy, SEO, ads, email, social, CRO
+- Claude SEO (github.com/AgriciDaniel/claude-seo)
+  → 13 comandos, auditoría + fix automático
+- Claude Ads (github.com/AgriciDaniel/claude-ads)
+  → 190+ checks, Meta + Google + TikTok + LinkedIn
+
+### SERVICIO 2 — LEADS:
+El que contesta primero gana. Menos de 30 segundos.
+
+Herramientas:
+- WhatsApp AgentKit → responde 24/7 automáticamente
+- Auto-CRM → califica leads del 0 al 100
+- Scrapling → listas de prospectos de Google Maps gratis
+
+### SERVICIO 3 — ECOSISTEMA COMPLETO (el que más paga):
+Todo conectado. La operación funciona sola.
+
+Piezas:
+- Claude WebKit → página del cliente en vivo
+- Claude SEO → aparece en Google Y en ChatGPT
+- Claude Code → pegamento que conecta todo
+
+### EL ORDEN EN QUE SE VENDE:
+1. PÁGINA (WebKit) → resultado el mismo día
+2. LEADS (WhatsApp + CRM + Scrapling) → llenas el pipeline
+3. MARKETING (Skills + Ads) → producen y promocionan
+4. POSICIONAMIENTO (SEO) → Google + ChatGPT
+
+### Cómo funciona el ecosistema completo:
+WebKit captura leads →
+WhatsApp AgentKit los contesta →
+Auto-CRM los califica →
+Marketing Skills + Claude Ads los promocionan →
+Claude SEO los posiciona →
+Claude Code conecta todo por detrás
+
+### Regla de oro:
+NO vendas todo de un jalón.
+Empieza con la página → luego leads → luego el resto.
+Cada pieza justifica la siguiente.

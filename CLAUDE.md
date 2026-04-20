@@ -2207,3 +2207,76 @@ portafolio personal
 - El plan = propuesta técnica
 - Claude Code = ejecución
 - Cobrar $500-2,000 USD por proyecto completo
+
+## De Idea a Código — Workflow con 3 modelos
+
+### El flujo completo:
+1. /model haiku → avientar idea, hacer preguntas
+2. /model sonnet → dar estructura y refinar
+3. /model opus → armar plan de ejecución completo
+4. /model sonnet → construir paso a paso
+
+### Prompts por modelo:
+
+HAIKU (explorar idea):
+"Tengo una idea: [descripción].
+Hazme preguntas para entender qué quiero,
+quién lo usa, qué problema resuelve y funcionalidades.
+Pregúntame una cosa a la vez."
+
+SONNET (refinar):
+"Esto es lo que armé. Necesito que:
+1. Elabores cada parte con más detalle
+2. Me digas qué le falta
+3. Organices en estructura clara
+4. Corrijas lo que no tenga sentido"
+
+OPUS (planear):
+"Arma plan de ejecución completo:
+- Arquitectura del proyecto
+- Archivos a crear y en qué orden
+- Dependencias necesarias
+- Pasos numerados
+- Decisiones técnicas"
+
+SONNET (construir):
+"Ejecuta el plan paso a paso.
+Empieza por el paso 1 y avanza en orden.
+Si necesitas decisión, pregúntame primero."
+
+---
+
+## Stack Gratuito Para Empezar a Vender
+
+Modelo: construyes con herramientas gratis →
+demo funcional al cliente → cliente paga →
+ingresos cubren upgrades.
+
+### Stack principal (todos con tier gratis):
+- Claude/Claude Code → programar apps y automatizaciones
+- Vercel (Hobby gratis) → hosting con deploy automático
+- GitHub (gratis) → repositorios y control de versiones
+- Supabase (500MB, 50K MAU gratis) → base de datos + auth
+- Cloudflare (gratis) → CDN, DNS, SSL
+- Clerk (10,000 MAU gratis) → autenticación
+- Stripe (sin cuota, ~2.9%/transacción) → cobrar pagos
+- Google Gemini/AI Studio (gratis) → prototipar con IA
+
+### Flujo completo de un proyecto:
+Cliente necesita web → Figma (diseño) →
+Claude Code + Next.js (desarrollo) →
+Supabase (base de datos) → Clerk (auth) →
+Vercel (deploy) → Cloudflare (DNS) →
+Stripe (cobro al cliente)
+
+### Qué puedes construir y vender:
+- Landing pages (más fácil de vender)
+- Web apps con auth y base de datos
+- E-commerce con pagos
+- Dashboards en tiempo real
+- Automatizaciones con IA
+
+### Tip de inicio:
+Empieza con landing pages. Es lo más fácil de vender.
+Demo real > mil propuestas en PDF.
+Aprende mientras construyes — no antes.
